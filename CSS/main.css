@@ -288,16 +288,24 @@ video {
     align-items: flex-end;
 }
 
-.stap {
+.about-grad {
+        background: linear-gradient(182deg, #FFF 1.28%, #ADF950 283.19%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-bottom: 12px;
+}
+
+.stamp {
     float: right;
 }
 
 .line {
-    border-top: 0.4px solid white;
+    border-top: 0.4px solid #ADF950;
 }
 
 .line:nth-child(4) {
-    border-bottom: 0.4px solid white;
+    border-bottom: 0.4px solid #ADF950;
 }
 
 
@@ -321,6 +329,12 @@ footer {
     display: flex;
     gap: 20px;
     flex-direction: column;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ADF950;
 }
 
 .footer-container {
