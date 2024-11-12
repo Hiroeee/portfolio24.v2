@@ -26,7 +26,6 @@ body {
     font-weight: 500;
     line-height: 98%; /* 105.84px */
     letter-spacing: -1.296px;
-    padding-bottom: 20px;
 }
 
 h1 {
@@ -105,6 +104,24 @@ p {
 
 .grn {
     color: #ADF950;
+}
+
+
+.pad-xs-b {
+    padding-bottom: 12px;
+}
+
+.pad-s-b {
+    padding-bottom: 20px;
+}
+
+.pad-m-t {
+    margin-top: 70px;
+}
+
+.pad-m-rl {
+    margin-right: 100px;
+    margin-left: 100px;
 }
 
 .main-wrapper {
@@ -357,4 +374,85 @@ footer a {
 .footnote {
     text-align: right;
     padding: 20px 0;
+}
+
+.hero-img img {
+    border-radius: 40px;
+    width: 100%;
+}
+
+.hero-title {
+    margin: 70px 140px 70px 140px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tag {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.case-detail {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.tag-box {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section {
+    margin: 140px 0 140px 0;
+    display: flex;
+    gap: 140px;
+    flex-direction: column;
+}
+
+.title-box {
+    margin: 0 140px 0 140px;
+}
+
+.case-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap: 120px;
+    margin: 0 140px 0 140px;
+}
+
+.case-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    float: left;
+}
+
+.user-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.user-fdb {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.avatar img {
+    width: 112px;
+    height: 112px;
+    border-radius: 200px;
 }
