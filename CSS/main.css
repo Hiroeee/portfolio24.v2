@@ -184,6 +184,24 @@ li a {
     border: 0.6px solid #FFF;
 }
 
+button {
+    color: #ADF950;
+    background-color: #292525;
+    border-radius: 300px;
+    border: 0.6px solid #ADF950;
+    padding: 8px 16px;
+    display: flex;
+    gap: 8px;
+}
+
+button a {
+    color: #ADF950;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
 .hero-sec {
     padding: 100px 0px 140px 0px;
 }
@@ -268,6 +286,12 @@ video {
     padding: 140px 0 140px 0;
 }
 
+.index-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
 .case-row {
     width: 100%;
     display: grid;
@@ -293,11 +317,6 @@ video {
     flex-direction: row;
     justify-content: space-between;
     margin-right: 10px;
-}
-
-.case-l-img img {
-    width: 100%;
-    border-radius: 40px;
 }
 
 .about-sec {
@@ -329,9 +348,8 @@ video {
     border-bottom: 0.4px solid #ADF950;
 }
 
-
 footer {
-    padding: 70px 60px 40px 60px;
+    padding: 140px 60px 40px 60px;
 }
 
 .l-button {
@@ -411,14 +429,14 @@ footer a {
 }
 
 .section {
-    margin: 140px 0 140px 0;
+    padding: 140px 0 140px 0;
     display: flex;
     gap: 140px;
     flex-direction: column;
 }
 
 .title-box {
-    margin: 0 140px 0 140px;
+    margin: 0 100px 0 100px;
 }
 
 .case-box {
@@ -426,7 +444,7 @@ footer a {
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     gap: 120px;
-    margin: 0 140px 0 140px;
+    margin: 0 100px 0 100px;
 }
 
 .case-ul {
