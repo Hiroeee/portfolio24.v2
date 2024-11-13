@@ -455,9 +455,22 @@ footer a {
     float: left;
 }
 
+.card-ul {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+}
+
 .user-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.persona-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     gap: 20px;
 }
@@ -504,6 +517,12 @@ footer a {
     height: 60px;
 }
 
+.company-logo {
+    background-color: yellow;
+    width: 100px;
+    height: 60px;
+}
+
 .mockup-img {
     background-color: yellow;
     width: 300px;
@@ -513,4 +532,50 @@ footer a {
 .case-img img {
     width: 100%;
     border-radius: 20px;
+}
+
+.company-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: pink;
+    padding: 40px;
+    border-radius: 40px;
+}
+
+.company-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+#mob {
+    width: 300px;
+    height: 600px;
+    border-radius: 50px;
+    float: right;
+}
+
+.ref-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.ref-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 120px;
+}
+
+a.ref-text {
+    color: #FFF;
+    font-family: "m";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
 }
