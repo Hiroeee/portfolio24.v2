@@ -69,7 +69,6 @@ h4 {
 }
 
 h5 {
-    color: #FFF;
     font-family: "m";
     font-size: 14px;
     font-style: normal;
@@ -79,7 +78,6 @@ h5 {
 }
 
 p {
-    color: #FFF;
     font-family: "m";
     font-size: 20px;
     font-style: normal;
@@ -526,10 +524,16 @@ footer a {
     height: 50px;
 }
 
-.company-logo {
-    background-color: yellow;
+.company-logo img {
     width: 100px;
-    height: 60px;
+}
+
+.comp-logo img {
+    width: 200px;
+}
+
+.comp-logo-l img {
+    width: 240px
 }
 
 .mockup-img img {
@@ -546,9 +550,12 @@ footer a {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background-color: pink;
     padding: 40px;
     border-radius: 40px;
+    border: 0.4px solid #FFF;
+    background: linear-gradient(0deg, rgba(236, 238, 238, 0.10) 0%, rgba(236, 238, 238, 0.10) 100%), rgba(255, 255, 255, 0.10);
+    box-shadow: 0px 0px 115.32px 57.66px rgba(0, 0, 0, 0.02);
+    backdrop-filter: blur(19.329999923706055px);
 }
 
 .company-cont {
