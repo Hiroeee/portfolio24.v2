@@ -656,6 +656,7 @@ a.ref-text {
 
 .tooltip {
     width: 31em;
+    height: 8.25em;
     --b: 2em;
     --h: 1em;
     --p: 20%;
