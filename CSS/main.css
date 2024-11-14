@@ -579,3 +579,26 @@ a.ref-text {
     line-height: 18px;
     text-transform: uppercase;
 }
+
+.number {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding: 4px;
+    background-color: #ADF950;
+    border-radius: 100%;
+    color: #292525;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.card-text {
+    display: flex;
+    gap: 10px;
+}
+
+.list-box {
+    display: flex;
+    align-items: flex-start;
+}
