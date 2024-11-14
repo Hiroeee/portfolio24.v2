@@ -106,6 +106,10 @@ p {
     color: #ADF950;
 }
 
+.blk {
+    color: #292525;
+}
+
 .cent {
     align-items: center;
 }
@@ -492,11 +496,14 @@ footer a {
 }
 
 .case-card {
-    background-color: pink;
+    border: 0.4px solid #FFF;
+    background: linear-gradient(0deg, rgba(236, 238, 238, 0.10) 0%, rgba(236, 238, 238, 0.10) 100%), rgba(255, 255, 255, 0.10);
+    box-shadow: 0px 0px 115.32px 57.66px rgba(0, 0, 0, 0.02);
+    backdrop-filter: blur(19.329999923706055px);
     border-radius: 40px;
     display: flex;
     flex-direction: column;
-    padding: 40px 20px;
+    padding: 40px 40px;
     gap: 20px;
 }
 
@@ -505,10 +512,8 @@ footer a {
 }
 
 .creator-img img {
-    width: 160px;
-    height: 160px;
-    border-radius: 300px;
-    background-color: yellow;
+    width: 220px;
+    height: 220px;
 }
 
 .card-detail {
@@ -517,10 +522,8 @@ footer a {
     gap: 40px;
 }
 
-.company-name {
-    background-color: yellow;
-    width: 100px;
-    height: 60px;
+.company-name img {
+    height: 50px;
 }
 
 .company-logo {
@@ -529,10 +532,9 @@ footer a {
     height: 60px;
 }
 
-.mockup-img {
-    background-color: yellow;
-    width: 300px;
-    height: 600px;
+.mockup-img img {
+    width: 200px;
+    height: 400px;
 }
 
 .case-img img {
