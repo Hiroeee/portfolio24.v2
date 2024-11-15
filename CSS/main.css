@@ -477,7 +477,7 @@ footer a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
-    gap: 20px;
+    gap: 60px;
 }
 
 .user-fdb {
@@ -525,7 +525,7 @@ footer a {
 }
 
 .company-logo img {
-    width: 100px;
+    width: 90px;
 }
 
 .comp-logo img {
@@ -685,7 +685,7 @@ a.ref-text {
 }
 
 .tooltip {
-    width: 31em;
+    width: 34em;
     height: 11em;
     --b: 2em;
     --h: 1em;
