@@ -7,9 +7,35 @@ body {
     color: #FFF;
 }
 
+@font-face {
+    font-family: 'PP Hatton';
+    src: url('PPHatton-Medium.woff2') format('woff2'),
+        url('PPHatton-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PPNeueMontreal-Book';
+    src: url('PPNeueMontreal-Book.woff2') format('woff2'),
+        url('PPNeueMontreal-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: url('PPNeueMontreal-Medium.woff2') format('woff2'),
+        url('PPNeueMontreal-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
 .display {
-    color: #FFF;
-    font-family: "h";
+    font-family: "PP Hatton";
     font-size: 108px;
     font-style: normal;
     font-weight: 500;
@@ -19,8 +45,7 @@ body {
 }
 
 .large-text {
-    color: #FFF;
-    font-family: "h";
+    font-family: "PP Hatton";
     font-size: 108px;
     font-style: normal;
     font-weight: 500;
@@ -29,7 +54,7 @@ body {
 }
 
 h1 {
-    font-family: "h";
+    font-family: "PP Hatton";
     font-size: 45px;
     font-style: normal;
     font-weight: 500;
@@ -39,17 +64,17 @@ h1 {
 }
 
 h2 {
-    font-family: "m";
+    font-family: "PPNeueMontreal-Book";
     font-size: 45px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: normal;
     line-height: 45px; /* 100% */
     letter-spacing: -1px;
     text-transform: uppercase;
 }
 
 h3 {
-    font-family: "h";
+    font-family: "PP Hatton";
     font-size: 35px;
     font-style: normal;
     font-weight: 500;
@@ -59,36 +84,36 @@ h3 {
 }
 
 h4 {
-    font-family: "m";
+    font-family: "PPNeueMontreal-Book";
     font-size: 35px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: normal;
     line-height: 35px; /* 100% */
     letter-spacing: -1px;
     text-transform: uppercase;
 }
 
 h5 {
-    font-family: "m";
+    font-family: "PPNeueMontreal-Medium";
     font-size: 14px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 18px; /* 128.571% */
     text-transform: uppercase;
 }
 
 p {
-    font-family: "m";
+    font-family: "PPNeueMontreal-Book";
     font-size: 20px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: normal;
     line-height: normal;
 }
 
 .footer {
     color: #ADF950;
     text-align: center;
-    font-family: "h";
+    font-family: "PP Hatton";
     font-size: 128.497px;
     font-style: normal;
     font-weight: 500;
@@ -181,7 +206,11 @@ li a {
 #button {
     color: #FFF;
     text-align: center;
+    font-family: "PPNeueMontreal-Medium";
     font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 128.571% */
     text-transform: uppercase;
     border-radius: 300px;
     padding: 10px;
@@ -196,13 +225,24 @@ button {
     padding: 8px 16px;
     display: flex;
     gap: 8px;
-    align-items: center;
+    font-family: "PPNeueMontreal-Medium";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 128.571% */
+    text-transform: uppercase;
+    
 }
 
 button a {
     color: #ADF950;
     text-align: center;
+    font-family: "PPNeueMontreal-Book";
     font-size: 35px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 35px; /* 100% */
+    letter-spacing: -1px;
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -593,12 +633,13 @@ footer a {
 
 a.ref-text {
     color: #FFF;
-    font-family: "m";
+    font-family: "PPNeueMontreal-Medium";
     font-size: 14px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
+    font-weight: 500;
+    line-height: 18px; /* 128.571% */
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .number {
@@ -606,12 +647,16 @@ a.ref-text {
     height: 30px;
     width: 30px;
     text-align: center;
-    padding: 4px;
+    padding: 3px 4px 4px 4px;
     background-color: #ADF950;
     border-radius: 100%;
     color: #292525;
     margin-right: 10px;
+    font-family: "PPNeueMontreal-Book";
     font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
 }
 
 .card-text {
@@ -663,7 +708,7 @@ a.ref-text {
 
 #bubble {
     width: 21em;
-    height: 13em;
+    height: 15em;
     /* triangle dimension */
     --b: 2em; /* base */
     --h: 1em; /* height */
