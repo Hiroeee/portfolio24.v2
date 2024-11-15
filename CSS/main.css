@@ -124,11 +124,6 @@ p {
     margin-top: 70px;
 }
 
-.pad-m-rl {
-    margin-right: 100px;
-    margin-left: 100px;
-}
-
 .main-wrapper {
     margin: 40px 60px 0 60px;
 }
@@ -201,6 +196,7 @@ button {
     padding: 8px 16px;
     display: flex;
     gap: 8px;
+    align-items: center;
 }
 
 button a {
@@ -445,6 +441,11 @@ footer a {
     flex-direction: column;
 }
 
+.cont-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .case-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -500,7 +501,7 @@ footer a {
     border-radius: 40px;
     display: flex;
     flex-direction: column;
-    padding: 40px 40px;
+    padding: 40px;
     gap: 20px;
 }
 
@@ -543,6 +544,12 @@ footer a {
 .case-img img {
     width: 100%;
     border-radius: 20px;
+}
+
+.img-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .company-desc {
@@ -626,7 +633,7 @@ a.ref-text {
 }
 
 .bubble {
-    width: 20em;
+    width: 21em;
     height: 11em;
     /* triangle dimension */
     --b: 2em; /* base */
@@ -655,8 +662,8 @@ a.ref-text {
 }
 
 #bubble {
-    width: 20em;
-    height: 14em;
+    width: 21em;
+    height: 13em;
     /* triangle dimension */
     --b: 2em; /* base */
     --h: 1em; /* height */
@@ -684,7 +691,7 @@ a.ref-text {
 }
 
 .tooltip {
-    width: 34em;
+    width: 31em;
     height: 11em;
     --b: 2em;
     --h: 1em;
