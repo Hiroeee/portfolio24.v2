@@ -133,6 +133,10 @@ p {
     margin: 40px 60px 0 60px;
 }
 
+.case-wrapper {
+    margin: 0px 140px 0 140px;
+}
+
 .navbar {
     width:auto;
     height: 70px;
@@ -441,16 +445,11 @@ footer a {
     flex-direction: column;
 }
 
-.title-box {
-    margin: 0 100px 0 100px;
-}
-
 .case-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     gap: 120px;
-    margin: 0 100px 0 100px;
 }
 
 .case-ul {
