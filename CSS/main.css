@@ -254,7 +254,10 @@ button a {
 .hero-text {
     color: #ADF950;
     text-align: center;
+    font-family: "PP Hatton";
     font-size: 232px;
+    font-style: normal;
+    font-weight: 500;
     line-height: 96%; /* 222.72px */
     letter-spacing: -3.712px;
     text-transform: uppercase;
