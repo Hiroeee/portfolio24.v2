@@ -232,15 +232,14 @@ li a {
 #button {
     color: #FFF;
     text-align: center;
-    font-family: "PPNeueMontreal-book";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 18px; /* 128.571% */
-    text-transform: uppercase;
     border-radius: 300px;
     padding: 10px;
     border: 0.6px solid #FFF;
+}
+
+#button:hover {
+    background-color: #FFF;
+    color: #292525;
 }
 
 .button-box {
