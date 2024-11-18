@@ -133,6 +133,10 @@ p {
     color: #292525;
 }
 
+.wht {
+    color: #FFF;
+}
+
 .cent {
     align-items: center;
 }
@@ -340,6 +344,11 @@ video {
     gap: 20px;
 }
 
+.index-box a {
+    text-decoration: none;
+    color: #FFF;
+}
+
 .case-row {
     width: 100%;
     display: grid;
@@ -421,7 +430,7 @@ footer {
 
 footer a {
     text-decoration: none;
-    color: #ADF950;
+    color: white;
 }
 
 .footer-container {
