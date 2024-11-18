@@ -633,7 +633,8 @@ footer a {
 }
 
 .comp-logo-l img {
-    width: 240px
+    width: 300px;
+    padding-bottom: 60px;
 }
 
 .mockup-img img {
@@ -662,12 +663,6 @@ footer a {
     background: linear-gradient(0deg, rgba(236, 238, 238, 0.10) 0%, rgba(236, 238, 238, 0.10) 100%), rgba(255, 255, 255, 0.10);
     box-shadow: 0px 0px 115.32px 57.66px rgba(0, 0, 0, 0.02);
     backdrop-filter: blur(19.329999923706055px);
-}
-
-.company-cont {
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
 }
 
 #mob {
@@ -836,7 +831,7 @@ a.ref-text {
     }
 
     .l-button {
-        height: 480px;
+        height: 426px;
     }
 
     .footer {
@@ -894,10 +889,10 @@ a.ref-text {
         gap: 20px;
     }
 
-    .company-cont {
-        gap: 20px;
+    .comp-logo-l img {
+        width: 300px;
+        padding-bottom: 0px;
     }
-
     
 }
 
@@ -976,7 +971,6 @@ a.ref-text {
 
     .l-button {
         height: 260px;
-        width: 412px;
     }
 
     .footer-desc {
