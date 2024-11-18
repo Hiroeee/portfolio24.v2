@@ -177,17 +177,17 @@ p {
 }
 
 .logo {
-    background-color: yellow;
+    display: inline-block;
     height: 20px;
     width: 20px;
 }
 
 .circle-logo {
+    background: linear-gradient(149deg, #8AFF48 4.36%, #E1FF89 89.55%);
     width: 20px;
     height: 20px;
-    background-color: linear-gradient(149deg, #8AFF48 4.36%, #E1FF89 89.55%);
     border-radius: 50%;
-    margin: 10px 0 10px 0;
+    display: inline-block;
 }
 
 ul {
