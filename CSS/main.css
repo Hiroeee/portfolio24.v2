@@ -171,6 +171,10 @@ p {
     padding-bottom: 20px;
 }
 
+.pad-s-t {
+    margin-top: 40px;
+}
+
 .pad-m-t {
     margin-top: 70px;
 }
