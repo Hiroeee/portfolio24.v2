@@ -10,6 +10,24 @@
     <link rel="preload" href="PPNeueMontreal-Book.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="PPNeueMontreal-Medium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="PPNeueMontreal-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const heroContainer = document.querySelector('.hero-container');
+    
+            function updateScale() {
+                const ratio = (1.06 / 1648);
+                const ratioTranslateY = (16 / 1648);
+                const scale = ratio * window.innerWidth;
+                const transform = `translateX(-50%) scale(${scale})`;
+                heroContainer.style.transform = transform;
+            }
+    
+            updateScale();
+    
+            window.addEventListener('resize', updateScale);
+        });
+    </script>
 </head>
 <body>
     <div class="navbar">
@@ -23,15 +41,26 @@
             <li>
                 <h5><a href="index.html#about">about</a></h5>
             </li>
-            <li>
-                <a id="button" class="xs-desc" href="" target="_blank">book a call</a>
-            </li>
+            <a id="button" class="xs-desc" href="" target="_blank">book a call</a>
         </ul>
     </div>
     <div class="main-wrapper">
         <div class="hero-sec">
             <div class="hero-text">Hiroe Ito</div>
-            <div class="hero-visual"></div>
+            <div class="hero-visual">
+                <div class="loading">
+                    loading...
+                </div>
+                <div class="hero-container">
+                    <spline-viewer
+                        url="https://prod.spline.design/wlnGpckuD316rjUc/scene.splinecode"
+                        zoom="false"
+                        zoom-intensity="0"
+                        events-target="global"
+                    />
+                    </spline-viewer>
+                </div>
+            </div>
             <div class="hero-desc up">
                 <p>Product Designer (UX/UI)</p>
                 <p>A designer with a psychology and marketing background, specialising in product design for digital products.</p>
