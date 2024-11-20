@@ -1069,6 +1069,11 @@ a.ref-text {
         gap: 120px;
     }
 
+    .stamp-box {
+        width: 100%;
+    }
     
-    
+    .stamp {
+        float: none;
+    }
 }
