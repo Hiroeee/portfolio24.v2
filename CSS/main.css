@@ -360,7 +360,6 @@ video {
 .index-box a {
     text-decoration: none;
     color: #FFF;
-    cursor: url("../img/hero/case-cur.png"), pointer;
 }
 
 .case-row {
@@ -374,6 +373,7 @@ video {
 .card-img img {
     width: 100%;
     border-radius: 40px;
+    cursor: url("../img/hero/case-cur.png"), pointer;
 }
 
 .desc-box {
