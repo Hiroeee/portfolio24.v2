@@ -4,6 +4,8 @@
 
 html {
     font-size: 2vw;
+    /* cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><circle r="10" cx="15" cy="15" fill="white" fill-opacity="0.6"" /></svg>'), pointer; */
+    cursor: url("../img/hero/main-cur.svg"), pointer;
 }
 
 body {
