@@ -607,6 +607,8 @@ footer a {
     display: block;
     width: 100%;
     height: auto;
+    border-radius: 40px;
+    border: 0.4px solid white;
 }
 
 .hover {
@@ -617,6 +619,8 @@ footer a {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
+    border-radius: 40px;
+    border: 0.4px solid white;
 }
 
 .hover-cont:hover .hover {
