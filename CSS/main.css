@@ -592,13 +592,6 @@ footer a {
     gap: 40px;
 }
 
-.user-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-between;
-    gap: 20px;
-}
-
 .card-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -672,7 +665,7 @@ footer a {
 }
 */
 
-/*
+
 .persona-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -680,6 +673,7 @@ footer a {
     gap: 60px;
 }
 
+/*
  .user-fdb {
     display: flex;
     flex-direction: column;
@@ -880,7 +874,7 @@ a.ref-text {
     color: #292525;
     font-size: 20px;
     /* max-width: 28ch; */
-}
+
 /*
 .tooltip {
     height: 100%;
