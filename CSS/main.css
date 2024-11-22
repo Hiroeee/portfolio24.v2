@@ -271,6 +271,12 @@ ul a {
     stroke: #292525;   
 }
 
+.button-cont {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
 .hero-sec {
     padding: 100px 0px 140px 0px;
 }
@@ -984,6 +990,12 @@ a.ref-text {
     .comp-logo-l img {
         width: 300px;
         padding-bottom: 0px;
+    }
+
+    .mob-box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
     
 }
