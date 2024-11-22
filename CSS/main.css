@@ -5,7 +5,6 @@
 html {
     font-size: 2vw;
     /* cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><circle r="10" cx="15" cy="15" fill="white" fill-opacity="0.6"" /></svg>'), pointer; */
-    cursor: url("../img/hero/main-cur.svg"), pointer;
 }
 
 body {
@@ -42,7 +41,7 @@ body {
 
 .display {
     font-family: "PP Hatton";
-    font-size: 108px;
+    font-size: 3.2rem;
     font-style: normal;
     font-weight: 500;
     line-height: 98%; /* 105.84px */
@@ -187,6 +186,7 @@ p {
 
 .main-wrapper {
     margin: 40px 60px 0 60px;
+    cursor: url("../img/hero/main-cur.svg"), pointer;
 }
 
 .case-wrapper {
@@ -341,7 +341,7 @@ video {
 
 .video-title {
     display: flex;
-    width: 630px;
+    width: 17rem;
     flex-direction: column;
     justify-content: flex-end;
     position: absolute;
@@ -524,7 +524,7 @@ footer a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: flex-start;
     margin-top: 20px;
     gap: 20px;
 }
@@ -534,6 +534,7 @@ footer a {
     gap: 4px;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .section {
@@ -605,13 +606,73 @@ footer a {
     gap: 20px;
 }
 
-.fdb-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-between;
-    gap: 20px;
+.hover-cont {
+    position: relative;
 }
 
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.hover-cont:hover .hover {
+    opacity: 1;
+} 
+
+/*
+.img-hover1 {
+    width:450px;
+    height: 623px;
+    background-image: url('../img/fm/user-a-com.png');
+    background-size: cover;
+    transition: background-image 0.5s ease-in-out; 
+}
+
+.img-hover1:hover {
+    width:450px;
+    height: 623px;
+    background-image: url('../img/fm/user-a-prob.png');
+}
+
+.img-hover2 {
+    width:450px;
+    height: 623px;
+    background-image: url('../img/fm/user-b-com.png');
+    background-size: cover;
+    transition: background-image 0.5s ease-in-out; 
+}
+
+.img-hover2:hover {
+    background-image: url('../img/fm/user-b-prob.png');
+}
+
+.img-hover3 {
+    width:450px;
+    height: 623px;
+    background-image: url('../img/fm/user-c-com.png');
+    background-size: cover;
+    transition: background-image 0.5s ease-in-out; 
+}
+
+.img-hover3:hover {
+    width:450px;
+    height: 623px;
+    background-image: url('../img/fm/user-c-prob.png');
+}
+*/
+
+/*
 .persona-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -619,18 +680,18 @@ footer a {
     gap: 60px;
 }
 
-.user-fdb {
+ .user-fdb {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 40px;
-}
+} 
 
 .avatar img {
     width: 112px;
     height: 112px;
     border-radius: 200px;
-}
+}*/
 
 .case-card {
     border: 0.4px solid #FFF;
@@ -764,7 +825,7 @@ a.ref-text {
     align-items: flex-start;
 }
 
-  /* HTML: <div class="tooltip">This is a Speech Bubble with a solid coloration and with border radius </div> */
+  /* HTML: <div class="tooltip">This is a Speech Bubble with a solid coloration and with border radius </div> 
 .bubble p {
     color: #292525;
     font-size: 20px;
@@ -820,7 +881,7 @@ a.ref-text {
     font-size: 20px;
     /* max-width: 28ch; */
 }
-
+/*
 .tooltip {
     height: 100%;
     --b: 0.6em;
@@ -840,6 +901,8 @@ a.ref-text {
     flex-direction: column;
     gap: 10px;
 }
+*/
+
 
 @media screen and (max-width: 900px) {
     .hero-text {
@@ -848,8 +911,8 @@ a.ref-text {
     }
 
     .video-title {
-        width: 390px;
-        bottom: -86.875px;
+        width: 16rem;
+        bottom: -51.875px;
     }
 
     .play-button {
@@ -858,7 +921,7 @@ a.ref-text {
     }
 
     .display {
-        font-size: 80px;
+        font-size: 4.0rem;
     }
 
     .l-button {
@@ -866,7 +929,7 @@ a.ref-text {
     }
 
     .footer {
-        font-size: 80px;
+        font-size: 4.80rem;
     }
 
     .hero-title {
@@ -875,7 +938,7 @@ a.ref-text {
     }
 
     .large-text {
-        font-size: 83px;
+        font-size: 5.2rem;
     }
 
     .case-wrapper {
@@ -905,7 +968,7 @@ a.ref-text {
     }
 
     h4.grn {
-        font-size: 30px;
+        font-size: 1.8rem;
     }
 
     .persona-container {
@@ -1009,7 +1072,7 @@ a.ref-text {
     }
 
     h4.grn {
-        font-size: 16px;
+        font-size: 1.6rem;
     }
 
     footer {
@@ -1017,7 +1080,7 @@ a.ref-text {
     } 
 
     .footer {
-        font-size: 48px;
+        font-size: 4.53rem;
     }
 
     .footnote {
