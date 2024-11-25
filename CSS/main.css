@@ -633,6 +633,13 @@ footer a {
     opacity: 1;
 } 
 
+blockquote {
+    margin: 0 auto;
+    padding: 0.6em;
+    border-left: 4px solid #ADF950;
+
+}
+
 /*
 .img-hover1 {
     width:450px;
