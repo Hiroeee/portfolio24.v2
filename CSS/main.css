@@ -630,7 +630,7 @@ footer a {
     opacity: 0;
     transition: .5s ease;
     border-radius: 40px;
-    border: 0.4px solid #ADF950;
+    border: 0.8px solid #ADF950;
 }
 
 .hover-cont:hover .hover {
@@ -678,7 +678,7 @@ blockquote {
 }
 
 .case-card:hover {
-    border: 0.4px solid #ADF950;
+    border: 0.8px solid #ADF950;
 }
 
 .avatar {
@@ -742,7 +742,7 @@ blockquote {
 }
 
 .company-desc:hover {
-    border: 0.4px solid #ADF950;
+    border: 0.8px solid #ADF950;
 }
 
 #mob {
