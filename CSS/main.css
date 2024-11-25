@@ -444,7 +444,6 @@ footer {
     justify-content: center;
     align-items: center;
     border-radius: 4000px;
-    /* background: #292525; */
     box-shadow: 4px 4px 83px 0px rgba(150, 255, 91, 0.40);
 }
 
@@ -645,32 +644,6 @@ blockquote {
 
 }
 
-/*
-.img-hover1 {
-    width:450px;
-    height: 623px;
-    background-image: url('../img/fm/user-a-com.png');
-    background-size: cover;
-    transition: background-image 0.5s ease-in-out; 
-}
-
-.img-hover1:hover {
-    width:450px;
-    height: 623px;
-    background-image: url('../img/fm/user-a-prob.png');
-}
-
-.img-hover2 {
-    width:450px;
-    height: 623px;
-    background-image: url('../img/fm/user-b-com.png');
-    background-size: cover;
-    transition: background-image 0.5s ease-in-out; 
-}
-
-.img-hover2:hover {
-    background-image: url('../img/fm/user-b-prob.png');
-}
 
 .img-hover3 {
     width:450px;
@@ -694,20 +667,6 @@ blockquote {
     justify-content: space-between;
     gap: 60px;
 }
-
-/*
- .user-fdb {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 40px;
-} 
-
-.avatar img {
-    width: 112px;
-    height: 112px;
-    border-radius: 200px;
-}*/
 
 .case-card {
     border: 0.4px solid #FFF;
@@ -841,85 +800,6 @@ a.ref-text {
     align-items: flex-start;
 }
 
-  /* HTML: <div class="tooltip">This is a Speech Bubble with a solid coloration and with border radius </div> 
-.bubble p {
-    color: #292525;
-    font-size: 20px;
-    max-width: 28ch;
-}
-
-.bubble {
-    height: 100%;
-    --b: 0.6em;
-    --h: 0.8em;
-    --p: 20%;
-    --r: 2.5em;
-    --c: white;
-    padding: 1.25em;
-    border-radius: var(--r) var(--r) min(var(--r),100% - var(--p) - var(--b)/2) min(var(--r),var(--p) - var(--b)/2)/var(--r);
-    clip-path: polygon(0 100%,0 0,100% 0,100% 100%,
-      min(100%,var(--p) + var(--b)/2) 100%,
-      var(--p) calc(100% + var(--h)),
-      max(0%  ,var(--p) - var(--b)/2) 100%);
-    background: var(--c);
-    border-image: conic-gradient(var(--c) 0 0) fill 0/
-      var(--r) calc(100% - var(--p) - var(--b)/2) 0 calc(var(--p) - var(--b)/2)/
-      0 0 var(--h) 0;
-}
-
-#bubble p {
-    color: #292525;
-    font-size: 20px;
-    max-width: 28ch;
-}
-
-#bubble {
-    height: 100%;
-    --b: 0.6em;
-    --h: 0.8em;
-    --p: 20%;
-    --r: 2.5em;
-    --c: white;
-    padding: 1.25em;
-    border-radius: var(--r) var(--r) min(var(--r),100% - var(--p) - var(--b)/2) min(var(--r),var(--p) - var(--b)/2)/var(--r);
-    clip-path: polygon(0 100%,0 0,100% 0,100% 100%,
-      min(100%,var(--p) + var(--b)/2) 100%,
-      var(--p) calc(100% + var(--h)),
-      max(0%  ,var(--p) - var(--b)/2) 100%);
-    background: var(--c);
-    border-image: conic-gradient(var(--c) 0 0) fill 0/
-      var(--r) calc(100% - var(--p) - var(--b)/2) 0 calc(var(--p) - var(--b)/2)/
-      0 0 var(--h) 0;
-}
-
-.tooltip p {
-    color: #292525;
-    font-size: 20px;
-    /* max-width: 28ch; */
-
-/*
-.tooltip {
-    height: 100%;
-    --b: 0.6em;
-    --h: 0.8em;
-    --p: 20%;
-    --r: 2.5em;
-    --c: white;
-    padding: 1.25em;
-    border-radius: var(--r) var(--r) min(var(--r), 100% - var(--p) - var(--b) / 2) min(var(--r), var(--p) - var(--b) / 2) / var(--r);
-    clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%, min(100%, var(--p) + var(--b) / 2) 100%, var(--p) calc(100% + var(--h)), max(0%, var(--p) - var(--b) / 2) 100%);
-    background: var(--c);
-    border-image: conic-gradient(var(--c) 0 0) fill 0 / var(--r) calc(100% - var(--p) - var(--b) / 2) 0 calc(var(--p) - var(--b) / 2) / 0 0 var(--h) 0;
-}
-
-.fdb-box {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-*/
-
-
 @media screen and (max-width: 900px) {
     .hero-text {
         font-size: 7.53rem;
@@ -1046,11 +926,6 @@ a.ref-text {
         display: flex;
         flex-direction: column;
         gap: 40px;
-    }
-
-    .tooltip {
-        width: auto;
-        height: 17em;
     }
 
     .ref-container {
