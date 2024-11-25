@@ -169,7 +169,7 @@ p {
 }
 
 .pad-xs-b {
-    padding-bottom: 12px;
+    padding-bottom: 10px;
 }
 
 .pad-s-b {
@@ -658,8 +658,6 @@ blockquote {
     height: 623px;
     background-image: url('../img/fm/user-c-prob.png');
 }
-*/
-
 
 .persona-container {
     display: grid;
