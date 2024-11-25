@@ -186,7 +186,7 @@ p {
 
 .main-wrapper {
     margin: 40px 60px 0 60px;
-    cursor: url("../img/hero/main-cur.svg"), pointer;
+   cursor: url("../img/hero/cursor-w.svg"), default;
 }
 
 .case-wrapper {
