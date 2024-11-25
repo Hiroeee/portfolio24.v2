@@ -198,7 +198,7 @@ p {
     height: 70px;
     padding: 10px 18px 10px 21px;
     border-radius: 400px;
-    border: 0.4px solid #FFF;
+    border: 0.2px solid #FFF;
     background: linear-gradient(0deg, rgba(236, 238, 238, 0.10) 0%, rgba(236, 238, 238, 0.10) 100%), rgba(255, 255, 255, 0.10);
     box-shadow: 0px 0px 115.32px 57.66px rgba(0, 0, 0, 0.02);
     backdrop-filter: blur(19.329999923706055px);
@@ -206,7 +206,7 @@ p {
     align-items: center;
     justify-content: space-between;
     position: sticky;
-    top: 0;
+    top: 20px;
     left: 0;
     margin: 20px 60px 0 60px;
     z-index: 60;
@@ -246,7 +246,7 @@ ul a {
     text-align: center;
     border-radius: 300px;
     padding: 10px;
-    border: 0.6px solid #FFF;
+    border: 0.4px solid #FFF;
 }
 
 #button:hover {
@@ -258,7 +258,7 @@ ul a {
     color: #ADF950;
     background-color: #292525;
     border-radius: 300px;
-    border: 0.6px solid #ADF950;
+    border: 0.4px solid #ADF950;
     padding: 8px 16px;
     display: inline-block;
     text-decoration: none;
@@ -383,6 +383,10 @@ video {
     width: 100%;
     border-radius: 40px;
     cursor: url("../img/hero/case-cur.png"), pointer;
+}
+
+.card-img img:hover {
+    filter: brightness(0.6);
 }
 
 .desc-box {
