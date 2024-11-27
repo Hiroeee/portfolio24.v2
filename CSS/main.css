@@ -279,7 +279,9 @@ ul a {
 }
 
 .hero-sec {
-    padding: 100px 0px 140px 0px;
+    padding: 80px 0px 140px 0px;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-text {
@@ -287,20 +289,18 @@ ul a {
     text-align: center;
     font-family: "PP Hatton";
     font-size: 8.14rem;
-    /*font-size: 232px; */
     font-style: normal;
     font-weight: 500;
-    line-height: 96%; /* 222.72px */
+    line-height: 84%; /* 222.72px */
     letter-spacing: -3.712px;
     text-transform: uppercase;
-    margin-bottom: 0.2rem;
 }
 
 .hero-desc {
     display: grid;
     align-content: space-between;
     grid-template-columns: 1fr 0.6fr;
-    margin-top: 60px;
+    margin-top: 140px;
 }
 
 .hero-video {
@@ -385,8 +385,9 @@ video {
     cursor: url("../img/hero/case-cur.png"), pointer;
 }
 
-.card-img img:hover {
-    filter: brightness(0.4)saturate(0.8)blur(1px);
+.card-img:hover {
+    filter: brightness(0.6)saturate(0.8)blur(0.3px);
+    transition: .5s ease;
 }
 
 .desc-box {
@@ -482,7 +483,7 @@ footer a {
     /* height: 530px;*/
     border-radius: 40px;
     position: relative;
-    background-color: #F9DEF7;
+   background-color: #F9DEF7; 
 }
 
 .hero-container {
@@ -840,6 +841,7 @@ a.ref-text {
 .slider {
     width: 100%;
     height: var(--height);
+    margin: 70px 0 70px 0;
     overflow: hidden;
     mask-image: linear-gradient(
         to right,
