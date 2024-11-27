@@ -861,7 +861,7 @@ a.ref-text {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    min-width: calc(var(--width))*var(--quantity);
+    min-width: calc(var(--width)*var(--quantity));
     position: relative;
 }
 
@@ -870,8 +870,8 @@ a.ref-text {
     height: var(--height);
     position: absolute;
     text-align: center;
-    animation: autoRun 10s linear infinite;
-    animation-delay: calc((10s / var(--quantity)) * (var(--position) - var(--quantity))); 
+    animation: autoRun 20s linear infinite;
+    animation-delay: calc((20s / var(--quantity)) * (var(--position) - var(--quantity))); 
 }
 
 .slider .list .item img {
