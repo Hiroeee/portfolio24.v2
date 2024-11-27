@@ -386,7 +386,7 @@ video {
 }
 
 .card-img img:hover {
-    filter: brightness(0.6);
+    filter: brightness(0.4)saturate(0.8)blur(1px);
 }
 
 .desc-box {
@@ -641,7 +641,6 @@ blockquote {
     margin: 0 auto;
     padding: 0.6em;
     border-left: 4px solid #ADF950;
-
 }
 
 .img-hover3 {
@@ -803,6 +802,85 @@ a.ref-text {
 .list-box {
     display: flex;
     align-items: flex-start;
+}
+
+.autoshow {
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%);
+}
+
+@keyframes autoShowAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(200px)scale(0.3);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0)scale(1);
+    }
+}
+
+.autoBlur {
+    animation: autoBlurAnimation linear both;
+    animation-timeline: view();
+}
+
+@keyframes autoBlurAnimation {
+    0% {
+        filter: blur(40px);
+    }
+    35%,55% {
+        filter: blur(0px);
+    }
+    100% {
+        filter: blur(40px);
+    }
+}
+
+.slider {
+    width: 100%;
+    height: var(--height);
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 10% 90%,
+        transparent
+    );
+}
+
+.slider .list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-width: calc(var(--width))*var(--quantity);
+    position: relative;
+}
+
+.slider .list .item {
+    width: var(--width);
+    height: var(--height);
+    position: absolute;
+    text-align: center;
+    animation: autoRun 10s linear infinite;
+    animation-delay: calc((10s / var(--quantity)) * (var(--position) - var(--quantity))); 
+}
+
+.slider .list .item img {
+    width: 100%;
+}
+
+@keyframes autoRun {
+    from {
+        left: 100%;
+    }
+    to {
+        left: calc(var(--width) * -1);
+    }
+}
+
+.slider:hover .item {
+    animation-play-state: paused!important;
 }
 
 @media screen and (max-width: 900px) {
