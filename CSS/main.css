@@ -405,7 +405,7 @@ video {
 }
 
 .about-sec {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.6fr 1fr;
     margin: 140px 0 140px 0;
     display: grid;
     justify-content: space-between;
