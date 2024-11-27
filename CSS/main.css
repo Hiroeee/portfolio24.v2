@@ -241,8 +241,13 @@ ul a {
     color: #FFF;
 }
 
+ul a:hover {
+    color: #ADF950;
+}
+
 #button {
-    color: #FFF;
+    background-color: #FFF;
+    color: #292525;
     text-align: center;
     border-radius: 300px;
     padding: 10px;
@@ -250,8 +255,9 @@ ul a {
 }
 
 #button:hover {
-    background-color: #FFF;
+    background-color: #ADF950;
     color: #292525;
+    border: none;
 }
 
 .button-box {
