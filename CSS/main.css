@@ -414,6 +414,12 @@ video {
     margin-top: 20px;
 }
 
+.desc-box:hover, 
+.desc-box:hover svg path {
+    stroke: var(--grn);
+    color: var(--grn);
+}
+
 .title {
     display: flex;
     flex-direction: row;
