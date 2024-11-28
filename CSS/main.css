@@ -428,6 +428,10 @@ video {
     align-items: flex-end;
 }
 
+.about-sec .large-text {
+    color: var(--grn);
+}
+
 .about-grad {
         background: linear-gradient(182deg, #FFF 1.28%, #ADF950 283.19%);
         background-clip: text;
@@ -438,6 +442,7 @@ video {
 
 .stamp {
     float: right;
+    color: var(--grn);
 }
 
 .line {
@@ -456,7 +461,6 @@ footer {
     display: flex;
     width: 100%;
     height: 580px;
-    /* padding: 0px var(--1440_24px, 24px); */
     justify-content: center;
     align-items: center;
     border-radius: 4000px;
@@ -468,6 +472,7 @@ footer {
     gap: 20px;
     flex-direction: column;
     align-items: center;
+    color: var(--grn);
 }
 
 footer a {
