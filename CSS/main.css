@@ -152,6 +152,13 @@ p {
     text-transform: uppercase;
 }
 
+:root {
+    --grn: #ADF950;
+    --blk: #292525;
+    --wht: #ffffff;
+}
+
+/*
 .grn {
     color: #ADF950;
 }
@@ -163,6 +170,7 @@ p {
 .wht {
     color: #FFF;
 }
+*/    
 
 .cent {
     align-items: center;
@@ -844,51 +852,28 @@ a.ref-text {
     }
 }
 
-.slider {
-    width: 100%;
-    height: var(--height);
-    margin: 70px 0 70px 0;
+.marquee {
     overflow: hidden;
-    mask-image: linear-gradient(
-        to right,
-        transparent,
-        black 10% 90%,
-        transparent
-    );
-}
-
-.slider .list {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    min-width: calc(var(--width)*var(--quantity));
-    position: relative;
+    mask-image: linear-gradient(to right, transparent, black 10% 90%, transparent);
+    margin: 70px 0 70px 0;
 }
 
-.slider .list .item {
-    width: var(--width);
-    height: var(--height);
-    position: absolute;
+.marquee .large-desc {
+    white-space: nowrap;
+    text-transform: uppercase;
+    display: flex;
     text-align: center;
-    animation: autoRun 20s linear infinite;
-    animation-delay: calc((20s / var(--quantity)) * (var(--position) - var(--quantity))); 
+    align-items: center;
+    color: var(--grn);
 }
 
-.slider .list .item img {
-    width: 100%;
-}
-
-@keyframes autoRun {
-    from {
-        left: 100%;
-    }
-    to {
-        left: calc(var(--width) * -1);
-    }
-}
-
-.slider:hover .item {
-    animation-play-state: paused!important;
+.m-span {
+    text-align: center;
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
+    color:var(--wht);
+    padding-bottom: 0.18rem;
 }
 
 @media screen and (max-width: 900px) {

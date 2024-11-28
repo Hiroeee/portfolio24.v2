@@ -54,6 +54,39 @@
             window.addEventListener('resize', updateScale);
         });
     </script>
+    <script>
+        function Marquee(selector, speed) {
+            const parentSelector = document.querySelector(selector);
+            const clone = parentSelector.innerHTML;
+            const firstElement = parentSelector.children[0];
+            let i = 0;
+            let marqueeInterval;
+          
+            parentSelector.insertAdjacentHTML('beforeend', clone);
+            parentSelector.insertAdjacentHTML('beforeend', clone);
+          
+            function startMarquee() {
+              marqueeInterval = setInterval(function () {
+                firstElement.style.marginLeft = `-${i}px`;
+                if (i > firstElement.clientWidth) {
+                  i = 0;
+                }
+                i = i + speed;
+              }, 0);
+            }
+          
+            function stopMarquee() {
+              clearInterval(marqueeInterval);
+            }
+          
+           parentSelector.addEventListener('mouseenter', stopMarquee);
+            parentSelector.addEventListener('mouseleave', startMarquee);
+          
+            startMarquee();
+          }
+          
+          window.addEventListener('load', () => Marquee('.marquee', 0.4));
+    </script>
      <!-- Google Tag Manager -->
      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -106,40 +139,9 @@
                     </spline-viewer>
                 </div>
             </div>
-            <div class="slider" style="
-            --width: 280px;
-            --height: 40px;
-            --quantity: 10;
-            ">
-                <div class="list">
-                    <div class="item large-desc" style="--position: 1">⁕ PRODUCT DESIGN</div>
-                    <div class="item large-desc grn" style="--position: 2">⁕ PRODUCT DESIGN</div>
-                    <div class="item large-desc" style="--position: 3">⁕ PRODUCT DESIGN</div>
-                    <div class="item large-desc grn" style="--position: 4">⁕ PRODUCT DESIGN</div>
-                    <div class="item large-desc" style="--position: 5">⁕ PRODUCT DESIGN</div>
-                    <div class="item large-desc grn" style="--position: 6">⁕ PRODUCT DESIGN</div>
-                    <div class="item large-desc" style="--position: 7">⁕ PRODUCT DESIGN</div>
-                    <div class="item large-desc grn" style="--position: 8">⁕ PRODUCT DESIGN</div>
-                    <div class="item large-desc" style="--position: 9">⁕ PRODUCT DESIGN</div>
-                    <div class="item large-desc grn" style="--position: 10">⁕ PRODUCT DESIGN</div>
-                </div>
-            </div>
-            <div class="slider" style="
-            --width: 300px;
-            --height: 40px;
-            --quantity: 10;
-            ">
-                <div class="list">
-                    <div class="item large-desc" style="--position: 1">⁕</div>
-                    <div class="item large-desc grn" style="--position: 2">PRODUCT design</div>
-                    <div class="item large-desc" style="--position: 3">⁕</div>
-                    <div class="item large-desc grn" style="--position: 4">UX/UI design</div>
-                    <div class="item large-desc" style="--position: 5">⁕</div>
-                    <div class="item large-desc grn" style="--position: 6">WEB design</div>
-                    <div class="item large-desc" style="--position: 7">⁕</div>
-                    <div class="item large-desc grn" style="--position: 8">HTML/CSS</div>
-                    <div class="item large-desc" style="--position: 9">⁕</div>
-                    <div class="item large-desc grn" style="--position: 10">illustration</div>
+            <div class="slider-container">
+                <div class="marquee">
+                    <div class="large-desc grn">Product Design <span class="m-span">⁕</span> UX/UI design <span class="m-span">⁕</span> Web Design <span class="m-span">⁕</span> HTML/CSS <span class="m-span">⁕</span> Illustration <span class="m-span">⁕</span> &nbsp;</div>
                 </div>
             </div>
             <div class="hero-desc up autoshow">
