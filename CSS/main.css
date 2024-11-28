@@ -286,7 +286,7 @@ ul a:hover {
     background-color: var(--grn);
     border: none;
     color:var(--blk);
-    stroke: none;   
+    stroke: var(--blk);   
 }
 
 .button-cont {
