@@ -320,25 +320,11 @@ ul a:hover {
     margin-top: 140px;
 }
 
-.name {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-}
-
-.desc-three {
-    display: grid;
-    align-content: space-between;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 70px;
-}
-
 .desc-four {
     display: grid;
     align-content: space-between;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top: 70px;
+    margin-top: 140px;
     gap: 60px;
 }
 
