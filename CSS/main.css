@@ -320,6 +320,19 @@ ul a:hover {
     margin-top: 140px;
 }
 
+.desc-four {
+    display: grid;
+    align-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 140px;
+    gap: 60px;
+}
+
+.s-desc {
+    display: flex;
+    flex-direction: column;
+}
+
 .hero-video {
     position: relative;
     width: 100%;
