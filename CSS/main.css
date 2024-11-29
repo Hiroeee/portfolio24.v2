@@ -878,6 +878,12 @@ a.ref-text {
     line-height: normal;
 }
 
+.no-box {
+    display: flex;
+    text-align: center;
+   /* align-items: center;*/
+}
+
 .card-text {
     display: flex;
     flex-direction: column;
@@ -886,7 +892,7 @@ a.ref-text {
 
 .list-box {
     display: flex;
-    align-items: flex-start;
+    /*align-items: center;*/
 }
 
 .autoshow {
