@@ -522,6 +522,9 @@ footer a {
 }
 
 .loading {
+    color: var(--blk);
+    display: flex;
+    flex-direction: column;
     position: absolute;
     left: 50%;
     top: 50%;
