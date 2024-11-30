@@ -54,6 +54,28 @@
                 window.addEventListener('resize', updateScale);
             });
         </script>
+        <script>
+            window.addEventListener('load', function () {
+                            document.addEventListener('scroll', () => {
+                                if (window.scrollY <= 1200) {
+                                    document.querySelector('.footer-scroll a').classList.add('hide')
+                                } else {
+                                    document.querySelector('.footer-scroll a').classList.remove('hide')
+                                }
+                            });
+            
+                            document.querySelector('.menu-toggler').addEventListener('click', () => {
+                                menu = document.querySelector('.menu');
+                                menuToggler = document.querySelector('.menu-toggler');
+            
+                                let status = menu.getAttribute('data-open') === "1" ? 0 : 1;
+            
+                                console.log(status);
+            
+                                menu.setAttribute('data-open', status);
+                            });
+                        });
+        </script>
          <!-- Google Tag Manager -->
          <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -675,24 +697,14 @@
                             </a>
                         </div>
                     </div>
-                    <div class="back-btn pad-s-t">
-                        <a class="button-box" href="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                <g clip-path="url(#clip0_751_25370)">
-                                    <path d="M0.9375 12.1523H23.0625M0.9375 12.1523L12.0938 23.2148M0.9375 12.1523L12.0938 1.08984" stroke="#ADF950" stroke-width="1.2"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_751_25370">
-                                        <rect width="24" height="24" fill="white" transform="translate(0 0.152344)"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <span class="large-desc">top</span>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="footer-scroll">
+        <a href="#">
+            <img src="img/hero/scroll-up.png" alt="scroll up button">
+        </a>
     </div>
 </body>
 <footer>

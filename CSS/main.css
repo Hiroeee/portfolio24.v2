@@ -519,6 +519,27 @@ footer a {
     padding: 20px 0;
 }
 
+.footer-scroll {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: right;
+    align-items: center;
+    padding: 0px 60px 0 0;
+}
+
+.footer-scroll a {
+    position: fixed; 
+    bottom: 20px;
+    z-index: 10;
+    transition: opacity 0.3s;
+}
+
+.footer-scroll img {
+    width: 60px;
+    height: auto;
+}
+
 .hero-container {
     width: 700px;
     height: auto;
