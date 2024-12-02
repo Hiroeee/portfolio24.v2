@@ -118,7 +118,7 @@ p {
     line-height: normal;
 }
 
-.footer {
+.footer-text {
     color: var(--grn);
     text-align: center;
     font-family: "PP Hatton";
@@ -127,6 +127,39 @@ p {
     font-weight: 500;
     line-height: 98%; /* 125.928px */
     text-transform: uppercase;
+}
+
+.btn-shine {
+position: absolute;
+left: 50%;
+transform: translate(-50%,-50%);
+color: #ffffff;
+background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
+background-position: 0;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: shine 6s infinite linear;
+animation-fill-mode: forwards;
+-webkit-text-size-adjust: none;
+text-decoration: none;
+white-space: nowrap;
+font-family: "PP Hatton";
+font-size: 128.497px;
+font-style: normal;
+font-weight: 500;
+line-height: 98%;
+} 
+
+@keyframes shine {
+    0% {
+        background-position: 0;
+    }
+    60% {
+        background-position: 180px;
+    }
+    100% {
+        background-position: 0px;
+    }
 }
 
 .large-desc {
