@@ -54,28 +54,19 @@
                 window.addEventListener('resize', updateScale);
             });
         </script>
+        
         <script>
-            window.addEventListener('load', function () {
-                            document.addEventListener('scroll', () => {
-                                if (window.scrollY <= 1200) {
-                                    document.querySelector('.footer-scroll a').classList.add('hide')
-                                } else {
-                                    document.querySelector('.footer-scroll a').classList.remove('hide')
-                                }
-                            });
-            
-                            document.querySelector('.menu-toggler').addEventListener('click', () => {
-                                menu = document.querySelector('.menu');
-                                menuToggler = document.querySelector('.menu-toggler');
-            
-                                let status = menu.getAttribute('data-open') === "1" ? 0 : 1;
-            
-                                console.log(status);
-            
-                                menu.setAttribute('data-open', status);
-                            });
-                        });
+             window.addEventListener('load', function () {
+                document.addEventListener('scroll', () => {
+                    if (window.scrollY <= 2000) {
+                      document.querySelector('.footer-scroll').classList.add('hide')
+                    } else {
+                      document.querySelector('.footer-scroll').classList.remove('hide')
+                    }
+                });
+             });
         </script>
+       
          <!-- Google Tag Manager -->
          <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -687,6 +678,7 @@
                                     <div class="title">
                                         <h4 class="up">FARFETCH</h4>
                                         <div class="icon">
+                            
                                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" viewBox="0 0 28 29" fill="none">
                                                 <path d="M24.9492 3.42181L3.29297 25.0781M6.68359 3.42181H24.9492V21.6874" stroke="white" stroke-width="1.6"/>
                                             </svg>
@@ -701,7 +693,7 @@
             </div>
         </div>
     </div>
-    <div class="footer-scroll">
+    <div class="footer-scroll hide">
         <a href="#">
             <img src="img/hero/scroll-up.png" alt="scroll up button">
         </a>

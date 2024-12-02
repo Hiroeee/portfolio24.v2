@@ -449,11 +449,6 @@ video {
     align-items: flex-end;
 }
 
-/*
-.about-sec .large-text {
-    color: var(--grn);
-} */
-
 .about-grad {
         background: linear-gradient(182deg, #FFF 1.28%, #ADF950 283.19%);
         background-clip: text;
@@ -521,23 +516,28 @@ footer a {
 
 .footer-scroll {
     display: flex;
-    width: 100%;
+    width: 60px;
     height: 60px;
     justify-content: right;
     align-items: center;
-    padding: 0px 60px 0 0;
+    position: fixed; 
+    bottom: 20px;
+    right: 60px;
+    z-index: 10;
+    transition: opacity 0.3s;
 }
 
 .footer-scroll a {
-    position: fixed; 
-    bottom: 20px;
-    z-index: 10;
     transition: opacity 0.3s;
 }
 
 .footer-scroll img {
     width: 60px;
     height: auto;
+}
+
+.footer-scroll.hide {
+    opacity: 0;
 }
 
 .hero-container {
