@@ -54,6 +54,17 @@
                 window.addEventListener('resize', updateScale);
             });
         </script>
+        <script>
+            window.addEventListener('load', function () {
+               document.addEventListener('scroll', () => {
+                   if (window.scrollY <= 2000) {
+                     document.querySelector('.footer-scroll').classList.add('hide')
+                   } else {
+                     document.querySelector('.footer-scroll').classList.remove('hide')
+                   }
+               });
+            });
+       </script>
          <!-- Google Tag Manager -->
          <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -814,6 +825,11 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="footer-scroll hide">
+        <a href="#">
+            <img src="img/hero/scroll-up.png" alt="scroll up button">
+        </a>
     </div>
 </body>
 <footer>

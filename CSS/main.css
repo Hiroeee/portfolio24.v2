@@ -471,7 +471,10 @@ video {
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
     padding: 140px 60px 40px 60px;
+    align-items: center;
 }
 
 .l-button {
@@ -500,6 +503,8 @@ footer a {
 .footer-container {
     display: flex;
     flex-flow: column;
+    width: 90%;
+    justify-content: center;
 }
 
 .footer-box {
@@ -511,7 +516,7 @@ footer a {
 
 .footnote {
     text-align: right;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .footer-scroll {
