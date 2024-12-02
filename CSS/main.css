@@ -129,38 +129,34 @@ p {
     text-transform: uppercase;
 }
 
-.btn-shine {
-position: absolute;
-left: 50%;
-transform: translate(-50%,-50%);
-color: #ffffff;
-background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
-background-position: 0;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-animation: shine 6s infinite linear;
-animation-fill-mode: forwards;
--webkit-text-size-adjust: none;
-text-decoration: none;
-white-space: nowrap;
-font-family: "PP Hatton";
-font-size: 128.497px;
-font-style: normal;
-font-weight: 500;
-line-height: 98%;
-} 
+.grow-text {
+    font-family: "PP Hatton";
+    font-size: 128.497px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 98%; 
+    background: 50% 100% / 50% 50% no-repeat
+             radial-gradient(ellipse at bottom, var(--grn), transparent, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: reveal 3000ms ease-in-out forwards 200ms,
+             glow 2500ms linear infinite 2000ms;
+}
 
-@keyframes shine {
-    0% {
-        background-position: 0;
-    }
-    60% {
-        background-position: 180px;
+@keyframes reveal {
+    80%{
+      letter-spacing: 8px;
     }
     100% {
-        background-position: 0px;
+      background-size: 300% 300%;
     }
 }
+@keyframes glow {
+    40% {
+      text-shadow: 0 0 8px #D1FF99;
+    }
+  }
 
 .large-desc {
     text-align: center;
