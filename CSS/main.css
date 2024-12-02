@@ -480,7 +480,7 @@ footer {
 .l-button {
     display: flex;
     width: 100%;
-    height: 580px;
+    height: 19rem;
     justify-content: center;
     align-items: center;
     border-radius: 4000px;
@@ -999,7 +999,11 @@ a.ref-text {
     }
 
     .l-button {
-        height: 426px;
+        height: 23rem;
+    }
+    
+    .footer-desc h4 {
+        font-size: 1.6rem;
     }
 
     .footer {
@@ -1142,7 +1146,7 @@ a.ref-text {
     }
 
     .l-button {
-        height: 260px;
+        height: 24rem;
     }
 
     .footer-desc {
@@ -1154,7 +1158,8 @@ a.ref-text {
     }
 
     footer {
-        padding: 40px 40px 0 40px;
+        padding: 40px 40px 60px 40px;
+        gap: 20px;
     } 
 
     .footer {
