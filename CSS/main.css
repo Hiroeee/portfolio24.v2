@@ -118,17 +118,6 @@ p {
     line-height: normal;
 }
 
-.footer {
-    color: var(--grn);
-    text-align: center;
-    font-family: "PP Hatton";
-    font-size: 128.497px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 98%; /* 125.928px */
-    text-transform: uppercase;
-}
-
 .glowing-btn {
     position: relative;
     color: var(--glow-color);
