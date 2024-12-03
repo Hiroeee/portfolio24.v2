@@ -1156,7 +1156,7 @@ a.ref-text {
         font-size: 4.0rem;
     }
 
-    .l-button {
+    /*.l-button {
         height: 23rem;
     }
     
@@ -1166,7 +1166,7 @@ a.ref-text {
 
     .footer {
         font-size: 4.80rem;
-    }
+    } */
 
     .hero-title {
         text-align: center;
@@ -1287,7 +1287,7 @@ a.ref-text {
         gap: 60px;
     }
 
-    h1.grn {
+    h1 {
         font-size: 35px;
     }
 
@@ -1303,7 +1303,7 @@ a.ref-text {
         gap: 60px;
     }
 
-    .l-button {
+    /*.l-button {
         height: 24rem;
     }
 
@@ -1323,6 +1323,7 @@ a.ref-text {
     .footer {
         font-size: 4.53rem;
     }
+    */
 
     .footnote {
         text-align: center;
