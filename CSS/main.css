@@ -499,7 +499,8 @@ ul a:hover {
     background-color: var(--grn);
     border: none;
     color:var(--blk);
-    stroke: var(--blk);   
+    stroke: var(--blk);  
+    box-shadow: 4px 4px 83px 0px rgba(150, 255, 91, 0.20); 
 }
 
 .button-cont {
@@ -1096,6 +1097,7 @@ footer a {
     transition: .5s ease;
     border-radius: 40px;
     border: 0.8px solid var(--grn);
+    box-shadow: 4px 4px 83px 0px rgba(150, 255, 91, 0.20); 
 }
 
 .hover-cont:hover .hover {
@@ -1143,6 +1145,7 @@ blockquote {
 
 .case-card:hover {
     border: 0.8px solid var(--grn);
+    box-shadow: 4px 4px 83px 0px rgba(150, 255, 91, 0.20); 
 }
 
 .avatar {
@@ -1207,6 +1210,7 @@ blockquote {
 
 .company-desc:hover {
     border: 0.8px solid var(--grn);
+    box-shadow: 4px 4px 83px 0px rgba(150, 255, 91, 0.20); 
 }
 
 #mob {
