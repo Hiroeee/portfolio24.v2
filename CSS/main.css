@@ -10,7 +10,19 @@ html {
 body {
     background-color: var(--blk);
     color: var(--wht);
+    font-family: var(--body);
+    font-family: var(--display);
 }
+
+:root {
+    --grn: #ADF950;
+    --blk: #292525;
+    --wht: #ffffff;
+    --pnk: #F9DEF7;
+   --glow-color: hsl(87 93.4% 64.5%);
+   --display:  "PP Hatton";
+   --body:  "PPNeueMontreal-Book";
+} 
 
 @font-face {
     font-family: 'PP Hatton';
@@ -40,7 +52,7 @@ body {
 }
 
 .display {
-    font-family: "PP Hatton";
+    font-family: var(--display);
     font-size: 3.2rem;
     font-style: normal;
     font-weight: 500;
@@ -50,7 +62,7 @@ body {
 }
 
 .large-text {
-    font-family: "PP Hatton";
+    font-family: var(--display);
     font-size: 108px;
     font-style: normal;
     font-weight: 500;
@@ -61,7 +73,7 @@ body {
 }
 
 h1 {
-    font-family: "PP Hatton";
+    font-family: var(--display);
     font-size: 45px;
     font-style: normal;
     font-weight: 500;
@@ -72,7 +84,7 @@ h1 {
 }
 
 h2 {
-    font-family: "PPNeueMontreal-Book";
+    font-family: var(--body);
     font-size: 45px;
     font-style: normal;
     font-weight: normal;
@@ -82,7 +94,7 @@ h2 {
 }
 
 h3 {
-    font-family: "PP Hatton";
+    font-family: var(--display);
     font-size: 35px;
     font-style: normal;
     font-weight: 500;
@@ -92,7 +104,7 @@ h3 {
 }
 
 h4 {
-    font-family: "PPNeueMontreal-Book";
+    font-family: var(--body);
     font-size: 35px;
     font-style: normal;
     font-weight: normal;
@@ -102,7 +114,7 @@ h4 {
 }
 
 h5 {
-    font-family: "PPNeueMontreal-book";
+    font-family:var(--body);
     font-size: 16px;
     font-style: normal;
     font-weight: normal;
@@ -111,7 +123,7 @@ h5 {
 }
 
 p {
-    font-family: "PPNeueMontreal-Book";
+    font-family: var(--body);
     font-size: 20px;
     font-style: normal;
     font-weight: normal;
@@ -120,7 +132,7 @@ p {
 
 .large-desc {
     text-align: center;
-    font-family: "PPNeueMontreal-Book";
+    font-family: var(--body);
     font-size: 35px;
     font-style: normal;
     font-weight: normal;
@@ -131,7 +143,7 @@ p {
 }
 
 .xs-desc {
-    font-family: "PPNeueMontreal-book";
+    font-family: var(--body);
     font-size: 16px;
     font-style: normal;
     font-weight: normal;
@@ -142,15 +154,6 @@ p {
 .up {
     text-transform: uppercase;
 }
-
-:root {
-    --grn: #ADF950;
-    --blk: #292525;
-    --wht: #ffffff;
-    --pnk: #F9DEF7;
-   /*--glow-color: hsl(186 100% 69%);*/
-   --glow-color: hsl(87 93.4% 64.5%);
-} 
 
 .cent {
     align-items: center;
@@ -282,7 +285,7 @@ ul a:hover {
 .hero-text {
     color: var(--grn);
     text-align: center;
-    font-family: "PP Hatton";
+    font-family: var(--display);
     font-size: 8.14rem;
     font-style: normal;
     font-weight: 500;
@@ -483,7 +486,7 @@ footer {
 .glow-desc {
     color: var(--grn);
     text-align: center;
-    font-family: "PP Hatton";
+    font-family: var(--display);
     font-size: 128.497px;
     font-style: normal;
     font-weight: 500;
@@ -1036,7 +1039,7 @@ blockquote {
 
 a.ref-text {
     color: var(--wht);
-    font-family: "PPNeueMontreal-Medium";
+    font-family: var(--body);
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -1055,7 +1058,7 @@ a.ref-text {
     border-radius: 100%;
     color: #292525;
     margin-right: 10px;
-    font-family: "PPNeueMontreal-Book";
+    font-family: var(--body);
     font-size: 20px;
     font-style: normal;
     font-weight: normal;
