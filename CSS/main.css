@@ -841,13 +841,6 @@ footer a {
     gap: 120px;
 }
 
-.mob-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
-    gap: 120px;
-}
-
 .case-ul {
     display: flex;
     flex-direction: column;
