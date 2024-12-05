@@ -878,7 +878,7 @@ footer a {
 
 .card-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: space-between;
     gap: 20px;
 }
@@ -1205,11 +1205,11 @@ a.ref-text {
         gap: 60px;
     }
 
-    .card-container {
+    /*.card-container {
         display: flex;
         flex-direction: column;
         gap: 20px;
-    }
+    } */
 
     h4.grn {
         font-size: 1.8rem;
@@ -1240,6 +1240,19 @@ a.ref-text {
     
     .item.large-desc {
         font-size: 20px;
+    }
+
+    .desc-four.up {
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+        gap: 40px;
+    }
+
+    .case-box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 }
 
