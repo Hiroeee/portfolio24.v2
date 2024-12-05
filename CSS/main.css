@@ -415,7 +415,6 @@ video {
     margin: 140px 0 140px 0;
     display: grid;
     justify-content: space-between;
-    /* gap: 240px; */
     align-items: flex-end;
 }
 
@@ -901,13 +900,6 @@ blockquote {
     width:450px;
     height: 623px;
     background-image: url('../img/fm/user-c-prob.png');
-}
-
-.persona-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
-    gap: 60px;
 }
 
 .case-card {
