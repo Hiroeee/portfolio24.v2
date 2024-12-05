@@ -298,13 +298,6 @@ ul a:hover {
     text-transform: uppercase;
 }
 
-.hero-desc {
-    display: grid;
-    align-content: space-between;
-    grid-template-columns: 1fr 0.6fr;
-    margin-top: 140px;
-}
-
 .desc-four {
     display: grid;
     align-content: space-between;
@@ -385,15 +378,6 @@ video {
     text-decoration: none;
     color:var(--wht);
 }
-
-/*
-.case-row {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin-bottom: 140px;
-} */
 
 .card-img img {
     width: 100%;
@@ -1020,6 +1004,7 @@ blockquote {
     flex-direction: column;
     justify-content: space-between;
     gap: 60px;
+    padding-right: 100px;
 }
 
 .ref-container {
