@@ -155,6 +155,10 @@ p {
     text-transform: uppercase;
 }
 
+.txt-cent {
+    text-align: center;
+}
+
 .cent {
     align-items: center;
 }
@@ -487,7 +491,8 @@ footer {
     color: var(--grn);
     text-align: center;
     font-family: var(--display);
-    font-size: 128.497px;
+    font-size: 4rem;
+    /*font-size: 128.497px;*/
     font-style: normal;
     font-weight: 500;
     line-height: 98%;
