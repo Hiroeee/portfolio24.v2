@@ -667,7 +667,13 @@ footer a {
     margin-top: 60px;
 }
 
+footer a:hover {
+    color: var(--grn);
+    transition: .5s ease;
+}
+
 .footnote {
+    color: rgba(255, 255, 255, 0.20);
     text-align: right;
     padding: 10px 0;
 }
