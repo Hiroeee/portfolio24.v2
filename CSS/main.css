@@ -52,28 +52,6 @@ body {
     font-display: swap;
 }
 
-.display {
-    font-family: var(--display);
-    font-size: 3.2rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 98%; /* 105.84px */
-    letter-spacing: -1.296px;
-    mix-blend-mode: difference;
-}
-
-.large-text {
-    font-family: var(--display);
-    /*font-size: 108px;*/
-    font-size: 3.2rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 98%; /* 105.84px */
-    letter-spacing: -1.296px;
-    margin-top: 20px;
-    color: var(--grn);
-}
-
 h1 {
     font-family: var(--display);
     font-size: 45px;
@@ -130,6 +108,18 @@ p {
     font-style: normal;
     font-weight: normal;
     line-height: normal;
+}
+
+.large-text {
+    font-family: var(--display);
+    /*font-size: 108px;*/
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 98%; /* 105.84px */
+    letter-spacing: -1.296px;
+    margin-top: 20px;
+    color: var(--grn);
 }
 
 .large-desc {
