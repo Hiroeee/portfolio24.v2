@@ -265,7 +265,6 @@ ul a:hover {
 .button-box:hover,
 .button-box:hover svg path {
     background-color: var(--grn);
-    border: none;
     color:var(--blk);
     stroke: var(--blk);  
     box-shadow: 4px 4px 83px 0px rgba(150, 255, 91, 0.20); 
