@@ -950,16 +950,19 @@ blockquote {
 }
 
 .company-logo img {
-    width: 90px;
+    width: 4rem;
+    /*width: 90px;*/
 }
 
 .comp-logo img {
-    width: 200px;
+    width: 5.6rem;
+    /*width: 200px;*/
 }
 
 .comp-logo-l img {
-    width: 300px;
-    padding-bottom: 60px;
+    width: 7rem;
+    /*width: 300px;
+    padding-bottom: 60px;*/
 }
 
 .mockup-img img {
