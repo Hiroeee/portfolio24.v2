@@ -24,6 +24,7 @@ body {
    --glow-color: hsl(87 93.4% 64.5%);
    --display:  "PP Hatton";
    --body:  "PPNeueMontreal-Book";
+   --br: 40px;
 } 
 
 @font-face {
@@ -1418,5 +1419,9 @@ a.ref-text {
         bottom: 40px;
         width: 20px;
         height: 20px;
+    }
+
+    .hero-visual, video, .case-img img, img.image, img.hover, .company-desc, .case-card, .card-img img {
+        border-radius: calc(var(--br) / 2 );
     }
 }
