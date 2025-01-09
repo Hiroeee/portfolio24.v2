@@ -1142,6 +1142,7 @@ a.ref-text {
     .hero-text {
         font-size: 7.53rem;
         /* font-size: 160px; */
+        padding-bottom: 2.2rem;
     }
 
     .video-title {
@@ -1239,14 +1240,17 @@ a.ref-text {
     .desc-four.up {
         display: flex;
         flex-direction: column;
-        margin-top: 70px;
-        gap: 40px;
+        gap: 20px;
     }
 
     .case-box {
         display: flex;
         flex-direction: column;
         gap: 20px;
+    }
+
+    .marquee {
+        margin: 40px 0 40px 0;
     }
 }
 
@@ -1269,8 +1273,8 @@ a.ref-text {
     }
 
     .section {
-        padding: 60px 0 60px 0;
-        gap: 120px;
+        padding: 120px 0 60px 0;
+        gap: 60px;
     }
 
     .case-detail {
@@ -1309,7 +1313,7 @@ a.ref-text {
     .index-row {
         display: flex;
         flex-direction: column;
-        gap: 120px;
+        gap: 60px;
     }
 
     .index-row.pad-s-b {
@@ -1340,7 +1344,7 @@ a.ref-text {
     }
     */
     footer {
-        padding: 140px 40px 40px 40px;
+        padding: 60px 40px 60px 40px;
     }
 
     .glow-desc {
@@ -1371,13 +1375,9 @@ a.ref-text {
     }
 
     .hero-sec {
-        padding: 60px 0px 60px 0px;
+        padding: 30px 0px 120px 0px;
     }
-
-    .hero-video {
-        padding: 100px 0px;
-    }
-
+    
     .video-title {
         width: 223px;
         bottom: -46.875px;
