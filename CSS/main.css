@@ -1346,6 +1346,13 @@ a.ref-text {
         font-size: 4.53rem;
     }
     */
+    .footer {
+        padding: 140px 40px 40px 40px;
+    }
+
+    .footer-container {
+        width: 100%;
+    }
 
     .footnote {
         text-align: center;
