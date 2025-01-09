@@ -766,11 +766,6 @@ footer a:hover {
     }
 }
 
-.hero-img img {
-    border-radius: 40px;
-    width: 100%;
-}
-
 .hero-title {
     margin: 70px 140px 70px 140px;
     align-items: center;
