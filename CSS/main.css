@@ -976,7 +976,7 @@ blockquote {
 .img-box {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 .company-desc {
@@ -1265,7 +1265,7 @@ a.ref-text {
 
     .hero-title {
         text-align: center;
-        margin: 40px 0px 40px 0px;
+        margin: 60px 0px 60px 0px;
     }
 
     .case-wrapper {
@@ -1282,6 +1282,7 @@ a.ref-text {
         grid-template-columns: 1fr 1fr;
         align-items: center;
         gap: 40px;
+        margin-top: 0;
     }
 
     .case-box {
@@ -1377,7 +1378,6 @@ a.ref-text {
     .hero-sec {
         padding: 30px 0px 120px 0px;
     }
-    
     .video-title {
         width: 223px;
         bottom: -46.875px;
