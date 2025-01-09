@@ -17,6 +17,7 @@ body {
 :root {
     --grn: #ADF950;
     --blk: #292525;
+    --d-gray: #393535;
     --gray: rgba(41, 37, 37, 0.40);
     --wht: #ffffff;
     --pnk: #F9DEF7;
@@ -914,9 +915,7 @@ blockquote {
 }*/
 
 .case-card {
-    /*border: 0.4px solid #FFF;
-    background: linear-gradient(0deg, rgba(236, 238, 238, 0.10) 0%, rgba(236, 238, 238, 0.10) 100%), rgba(255, 255, 255, 0.10);*/
-    background-color: #393535;
+    background-color: var(--d-gray);
     box-shadow: 0px 0px 115.32px 57.66px rgba(0, 0, 0, 0.02);
     backdrop-filter: blur(19.329999923706055px);
     border-radius: 40px;
@@ -990,9 +989,7 @@ blockquote {
     gap: 20px;
     padding: 40px;
     border-radius: 40px;
-    background-color: #393535;
-    /*border: 0.4px solid var(--wht);
-    background: linear-gradient(0deg, rgba(236, 238, 238, 0.10) 0%, rgba(236, 238, 238, 0.10) 100%), rgba(255, 255, 255, 0.10);*/
+    background-color: var(--d-gray);
     box-shadow: 0px 0px 115.32px 57.66px rgba(0, 0, 0, 0.02);
     backdrop-filter: blur(19.329999923706055px);
     transition: .5s ease;
