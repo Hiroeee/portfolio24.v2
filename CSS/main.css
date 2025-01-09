@@ -1125,7 +1125,7 @@ a.ref-text {
     overflow: hidden;
     display: flex;
     mask-image: linear-gradient(to right, transparent, black 10% 90%, transparent);
-    margin: 40px 0 70px 0;
+    margin: 40px 0 140px 0;
 }
 
 .marquee .large-desc {
