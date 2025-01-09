@@ -1343,8 +1343,21 @@ a.ref-text {
         font-size: 4.53rem;
     }
     */
-    .footer {
+    footer {
         padding: 140px 40px 40px 40px;
+    }
+
+    .glow-desc {
+        font-size: 5.6rem;
+    }
+
+    .glowing-btn {
+        height: 26rem;
+    }
+
+    h4.pad-s-b {
+        font-size: 20px;
+        padding-bottom: 10px;
     }
 
     .footer-container {
@@ -1359,13 +1372,6 @@ a.ref-text {
         display: flex;
         flex-direction: column;
         gap: 20px;
-    }
-
-    .mob-box {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-        align-items: center;
     }
 
     .hero-sec {
@@ -1404,5 +1410,18 @@ a.ref-text {
 
     .item.large-desc {
         font-size: 16px;
+    }
+
+    video#mob {
+        display: block;
+        margin: 0 auto;
+        float: none;
+    }
+
+    .footer-scroll {
+        right: 10px;
+        bottom: 40px;
+        width: 20px;
+        height: 20px;
     }
 }
