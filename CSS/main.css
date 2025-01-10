@@ -325,7 +325,7 @@ video {
     border-radius: var(--br);
 }
 
-.over-lay {
+/*.over-lay {
     position: absolute;
     top: 0;
     left: 0;
@@ -363,7 +363,7 @@ video {
     position: absolute;
     left: 40px;
     bottom: -117.875px;
-}
+}*/
 
 .case-container {
     padding: 140px 0 140px 0;
