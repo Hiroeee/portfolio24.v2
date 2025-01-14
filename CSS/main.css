@@ -895,21 +895,6 @@ blockquote {
     border-left: 4px solid var(--grn);
 }
 
-/*.img-hover3 {
-    width:450px;
-    height: 623px;
-    background-image: url('../img/fm/user-c-com.png');
-    background-size: cover;
-    transition: background-image 0.5s ease-in-out; 
-}
-
-.img-hover3:hover {
-    width:450px;
-    height: 623px;
-    background-image: url('../img/fm/user-c-prob.png');
-    opacity: 1;
-}*/
-
 .case-card {
     background-color: var(--d-gray);
     box-shadow: 0px 0px 115.32px 57.66px rgba(0, 0, 0, 0.02);
