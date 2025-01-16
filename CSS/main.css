@@ -383,7 +383,7 @@ video {
 .card-img img {
     width: 100%;
     border-radius: var(--br);
-    cursor: url("../img/hero/case-cur.png"), pointer;
+    cursor: url("../img/hero/case-cur1.png"), pointer;
 }
 
 .card-img:hover {
