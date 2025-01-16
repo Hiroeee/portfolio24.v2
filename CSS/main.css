@@ -189,7 +189,7 @@ p {
     height: 70px;
     padding: 10px 18px 10px 21px;
     border-radius: 400px;
-    border: 0.2px solid var(--wht);
+    /*border: 0.2px solid var(--wht);*/
     background: linear-gradient(0deg, rgba(236, 238, 238, 0.10) 0%, rgba(236, 238, 238, 0.10) 100%), rgba(255, 255, 255, 0.10);
     box-shadow: 0px 0px 115.32px 57.66px rgba(0, 0, 0, 0.02);
     backdrop-filter: blur(19.329999923706055px);
