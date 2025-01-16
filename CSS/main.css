@@ -117,7 +117,7 @@ p {
 .large-text {
     font-family: var(--display);
     /*font-size: 108px;*/
-    font-size: 3rem;
+    font-size: 2.4rem;
     font-style: normal;
     font-weight: 500;
     line-height: 98%; /* 105.84px */
@@ -1124,7 +1124,7 @@ a.ref-text {
     }
 
     .large-text {
-        font-size: 5.2rem;
+        font-size: 4.6rem;
     }
 
     .case-wrapper {
