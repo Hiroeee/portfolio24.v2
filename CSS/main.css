@@ -175,6 +175,10 @@ p {
     margin-top: 70px;
 }
 
+.gap-s-r {
+    gap: 20px;
+}
+
 .main-wrapper {
     margin: 40px 60px 0 60px;
    cursor: url("../img/hero/cursor-w.svg"), default;
@@ -1009,6 +1013,10 @@ a.ref-text {
 .list-box {
     display: flex;
     /*align-items: center;*/
+}
+
+.list-box img {
+    width: 160px;
 }
 
 .autoshow {
