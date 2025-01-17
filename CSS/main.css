@@ -700,6 +700,8 @@ footer a:hover {
 .footer-scroll img {
     width: 60px;
     height: auto;
+    backdrop-filter: blur(19.329999923706055px);
+    border-radius: 50%;
 }
 
 .footer-scroll.hide {
