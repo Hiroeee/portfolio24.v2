@@ -307,8 +307,8 @@ ul a:hover {
     display: grid;
     align-content: space-between;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    /*margin-top: 140px;*/
     gap: 60px;
+    align-items: center;
 }
 
 .s-desc {
