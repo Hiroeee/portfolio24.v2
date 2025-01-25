@@ -319,8 +319,6 @@ ul a:hover {
 .hero-video {
     position: relative;
     width: 100%;
-    /*padding: 140px 0px;*/
-    z-index: 50;
 }
 
 video {
@@ -796,6 +794,13 @@ footer a:hover {
     flex-direction: column;
 }
 
+.index-section {
+    padding: 140px 0 140px 0;
+    display: flex;
+    gap: 140px;
+    flex-direction: column;
+}
+
 .cont-container {
     display: flex;
     flex-direction: column;
@@ -1148,6 +1153,7 @@ a.ref-text {
         display: flex;
         flex-direction: column;
         gap: 20px;
+        align-items: flex-start;
     }
 
     .case-box {
@@ -1180,6 +1186,11 @@ a.ref-text {
     }
 
     .section {
+        padding: 120px 0 60px 0;
+        gap: 120px;
+    }
+
+    .index-section {
         padding: 120px 0 60px 0;
         gap: 60px;
     }
@@ -1219,12 +1230,6 @@ a.ref-text {
     }
 
     .index-row {
-        display: flex;
-        flex-direction: column;
-        gap: 60px;
-    }
-
-    .index-row.pad-s-b {
         display: flex;
         flex-direction: column;
         gap: 60px;
@@ -1305,6 +1310,10 @@ a.ref-text {
         bottom: 40px;
         width: 20px;
         height: 20px;
+    }
+
+    .list-box img {
+        width: 80px;
     }
 
     .hero-visual, video, .case-img img, img.image, img.hover, .case-card, .card-img img {
