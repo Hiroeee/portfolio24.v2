@@ -242,34 +242,7 @@ ul a:hover {
     opacity: 1;
 }
 
-.luxury .btn{ 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 300px;
-    padding: 10px;
-    background: transparent;
-    background-position: 1% 50%;
-    background-size: 300% 300%;
-  }
-  
-  .luxury .btn-1{ 
-    color: var(--wht);
-    border: 0.8px solid rgba(255,255,255,.9);
-    background-image: linear-gradient(270deg, rgba(255,255,255,.9), rgba(255,255,255,.9), rgba(255,255,255,0), rgba(255,255,255,0));
-}
-
-  .luxury .btn-1:hover{
-    background-color: var(--grn);
-    color: var(--blk);
-    background-position: 99% 50%;
-  }
-  
-.button-2 {
+/*.button-2 {
     padding: 10px;
     border-radius: 300px;
     background-color: var(--wht);
@@ -293,30 +266,27 @@ ul a:hover {
     box-shadow: var(--grn) 0px 0px 0px 0px;
     transform: translateY(10px);
     transition: 100ms;
-  }
+  }*/
 
-/* From Uiverse.io by cssbuttons-io */ 
 .button-3 {
     padding: 10px;
     background: var(--wht);
     color: var(--blk);
-    border-radius: 999px;
+    border-radius: 300px;
     position: relative;
     overflow: hidden;
-    border-radius: 0.6em;
     cursor: pointer;
   }
   
   .label {
     position: relative;
-    top: -1px;
   }
   
   .transition {
     transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
     transition-duration: 500ms;
     background-color: var(--grn);
-    border-radius: 999px;
+    border-radius: 300px;
     width: 0;
     height: 0;
     position: absolute;
@@ -335,7 +305,7 @@ ul a:hover {
   }
   
 
-#button {
+/*#button {
     background-color: var(--wht);
     color: var(--blk);
     text-align: center;
@@ -348,7 +318,7 @@ ul a:hover {
     background-color: var(--grn);
     color: var(--blk);
     opacity: 1;
-}
+}*/
 
 .button-box {
     color: var(--grn);
