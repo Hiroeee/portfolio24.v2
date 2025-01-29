@@ -330,8 +330,12 @@ video {
 }
 
 .index-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    /*
     display: flex;
-    flex-direction: row;
+    flex-direction: row;*/
     gap: 20px;
 }
 
@@ -340,15 +344,20 @@ video {
     color:var(--wht);
 }
 
-.card-img img {
+.card-img {
     width: 100%;
     border-radius: var(--br);
-    cursor: url("../img/hero/case-cur1.png"), pointer;
+    cursor: url("../img/hero/case-cur.png"), pointer;
 }
 
 .card-img:hover {
     filter: brightness(0.6)saturate(0.8)blur(0.3px);
     transition: .5s ease;
+}
+
+.card-img img {
+    width: 100%;
+    border-radius: var(--br);
 }
 
 .desc-box {
