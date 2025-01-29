@@ -248,14 +248,12 @@ ul a:hover {
     text-align: center;
     border-radius: 300px;
     padding: 10px;
-    border: 0.4px solid #FFF;
     transition: .5s ease;
 }
 
 #button:hover {
     background-color: var(--grn);
     color: var(--blk);
-    border-color: var(--grn);
     opacity: 1;
 }
 
