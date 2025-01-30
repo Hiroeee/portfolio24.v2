@@ -12,58 +12,8 @@ body {
     color: var(--wht);
     font-family: var(--body);
     font-family: var(--display);
+    cursor: url("../img/hero/cursor-w.svg"), default;
 }
-
-/*body:hover #custom-cursor {
-    opacity: 1;
-}
-
-#custom-cursor {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: white;
-    position: fixed;
-    top: 0;
-    opacity: 0;
-    pointer-events: none;
-    mix-blend-mode: difference;
-    transition: transform 500ms;
-}
-  
-#custom-cursor::after {
-    content: "";
-    border-radius: 50%;
-    position: absolute;
-    top: -8px;
-    left: -8px;
-    border: 1px solid white;
-    width: 30px;
-    height: 30px;
-}*/
-
-/*.custom-cursor {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: white;
-    border-radius: 50%;
-    top: -10px;
-    left: -10px;
-    pointer-events: none;
-}*/
-
-#circularcursor {
-    background-color: transparent;
-    border:3px solid white;    
-    height:20px;
-    width:20px;
-    border-radius:50%;
-    -moz-border-radius:50%;
-    -webkit-border-radius:50%;
-    position: absolute;
-    z-index: 1;
-  }
 
 :root {
     --grn: #ADF950;
@@ -232,7 +182,6 @@ p {
 
 .main-wrapper {
     margin: 40px 60px 0 60px;
-   /*cursor: url("../img/hero/cursor-w.svg"), default;*/
 }
 
 .case-wrapper {
@@ -445,7 +394,7 @@ video {
 .card-img {
     width: 100%;
     border-radius: var(--br);
-    cursor: url("../img/hero/case-cur.png"), pointer;
+    cursor: url("../img/hero/view-cur.png"), pointer;
 }
 
 .card-img:hover {

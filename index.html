@@ -97,48 +97,6 @@
           
           window.addEventListener('load', () => Marquee('.marquee', 0.4));
     </script>
-    <!--<script>
-        const customCursor = document.getElementById('custom-cursor');
-        const updateCursorPosition = (event) => {
-          customCursor.style.top = `${event.clientY}px`;
-          customCursor.style.left = `${event.clientX}px`;
-        }
-        window.addEventListener('mousemove', (event) => {
-          updateCursorPosition(event)
-        })
-    </script>-->
-   <!--<script>
-        customCursor=document.querySelector(".custom-cursor");
-        document.querySelector("body").onmousemove=(e)=>{
-            customCursor.style.top=e.clientY+"px";
-            customCursor.style.left=e.clientX+"px";
-        }
-    </script>--> 
-    <script>
-        document.body.onmousemove = function(e) {
-            document.documentElement.style.setProperty (
-              '--x', (
-                e.clientX+window.scrollX
-              )
-              + 'px'
-            );
-            document.documentElement.style.setProperty (
-              '--y', (
-                e.clientY+window.scrollY
-              ) 
-              + 'px'
-            );
-          }
-
-        $(document).ready(function() {
-            $(document).on('mousemove', function(e) {
-              $('#circularcursor').css({
-                left: e.pageX,
-                top: e.pageY
-              });
-            })
-          });
-    </script>
     <script>
        window.dataLayer = window.dataLayer || [];
        function gtag(){dataLayer.push(arguments);}
@@ -147,7 +105,6 @@
     </script> 
 </head>
 <body>
-    <div id="circularcursor"></div>
     <div class="navbar">
         <div class="logo">
             <a class="circle-logo" href="index.html"></a>
