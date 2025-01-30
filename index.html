@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
     <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-C523N4LTXL"></script>
         <script>
@@ -97,6 +97,23 @@
           
           window.addEventListener('load', () => Marquee('.marquee', 0.4));
     </script>
+    <!--<script>
+        const customCursor = document.getElementById('custom-cursor');
+        const updateCursorPosition = (event) => {
+          customCursor.style.top = `${event.clientY}px`;
+          customCursor.style.left = `${event.clientX}px`;
+        }
+        window.addEventListener('mousemove', (event) => {
+          updateCursorPosition(event)
+        })
+    </script>-->
+    <script>
+        customCursor=document.querySelector(".custom-cursor");
+        document.querySelector("body").onmousemove=(e)=>{
+            customCursor.style.top=e.clientY+"px";
+            customCursor.style.left=e.clientX+"px";
+        }
+    </script>
     <script>
        window.dataLayer = window.dataLayer || [];
        function gtag(){dataLayer.push(arguments);}
@@ -105,6 +122,7 @@
     </script> 
 </head>
 <body>
+    <div class="custom-cursor"></div>
     <div class="navbar">
         <div class="logo">
             <a class="circle-logo" href="index.html"></a>

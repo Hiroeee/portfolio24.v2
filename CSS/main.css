@@ -14,6 +14,45 @@ body {
     font-family: var(--display);
 }
 
+/*body:hover #custom-cursor {
+    opacity: 1;
+}
+
+#custom-cursor {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    transition: transform 500ms;
+}
+  
+#custom-cursor::after {
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+}*/
+
+.custom-cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    top: -10px;
+    left: -10px;
+    pointer-events: none;
+}
+
 :root {
     --grn: #ADF950;
     --blk: #292525;
@@ -181,7 +220,7 @@ p {
 
 .main-wrapper {
     margin: 40px 60px 0 60px;
-   cursor: url("../img/hero/cursor-w.svg"), default;
+   /*cursor: url("../img/hero/cursor-w.svg"), default;*/
 }
 
 .case-wrapper {
