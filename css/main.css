@@ -372,6 +372,17 @@ video {
     border-radius: var(--br);
 }
 
+.alt-card video {
+    opacity: 1;
+}
+
+.alt-card img {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .case-container {
     padding: 140px 0 140px 0;
 }
@@ -1071,6 +1082,7 @@ a.ref-text {
 }
 
 .l-autoshow {
+    -moz-animation: none !important;
     animation: l-autoShowAnimation both;
     animation-timeline: view(5% 90%);
 }
@@ -1323,6 +1335,7 @@ a.ref-text {
     .hero-sec {
         padding: 30px 0px 120px 0px;
     }
+
     .video-title {
         width: 223px;
         bottom: -46.875px;
@@ -1372,5 +1385,13 @@ a.ref-text {
 
     .hero-visual, video, .case-img img, img.image, img.hover, .case-card, .card-img img {
         border-radius: calc(var(--br) / 2 );
+    }
+
+    .alt-card video {
+        opacity: 0;
+    }
+
+    .alt-card img {
+        opacity: 1;
     }
 }
