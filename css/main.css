@@ -1242,7 +1242,7 @@ a.ref-text {
     }
 
     .marquee {
-        margin: 40px 0 40px 0;
+        margin: 20px 0 40px 0;
     }
 }
 
@@ -1252,7 +1252,7 @@ a.ref-text {
     }
 
     .main-wrapper {
-        margin: 40px 20px 0 20px;
+        margin: 10px 20px 0 20px;
     }
 
     .hero-title {
