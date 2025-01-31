@@ -1248,11 +1248,11 @@ a.ref-text {
 
 @media screen and (max-width: 600px) {
     .navbar {
-        margin: 20px 40px 0 40px;
+        margin: 20px 20px 0 20px;
     }
 
     .main-wrapper {
-        margin: 40px 40px 0 40px;
+        margin: 40px 20px 0 20px;
     }
 
     .hero-title {
@@ -1319,7 +1319,7 @@ a.ref-text {
     }
 
     footer {
-        padding: 60px 40px 60px 40px;
+        padding: 60px 20px 40px 20px;
     }
 
     .glow-desc {
