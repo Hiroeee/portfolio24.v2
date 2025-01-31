@@ -207,19 +207,6 @@ p {
     mix-blend-mode: difference;
 }
 
-@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-    .navbar {
-      -webkit-backdrop-filter: blur(20px);
-      backdrop-filter: blur(20px);
-    }
-}
-  
-@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-    .navbar {
-      background-color: rgba(255, 255, 255, .8);
-    }
-}
-
 .logo {
     display: flex;
     height: 24px;
@@ -1077,7 +1064,6 @@ a.ref-text {
 }
 
 .autoshow {
-    -moz-animation: none;
     animation: autoShowAnimation both;
     animation-timeline: view(90% 5%);
 }
@@ -1094,7 +1080,6 @@ a.ref-text {
 }
 
 .l-autoshow {
-    -moz-animation: none !important;
     animation: l-autoShowAnimation both;
     animation-timeline: view(5% 90%);
 }
@@ -1111,7 +1096,6 @@ a.ref-text {
 }
 
 .autoBlur {
-    -moz-animation: none !important;
     animation: autoBlurAnimation linear both;
     animation-timeline: view();
 }
