@@ -687,7 +687,7 @@ footer a:hover {
 }
 
 .footnote {
-    color: rgba(255, 255, 255, 0.20);
+    color: rgba(255, 255, 255, 0.40);
     text-align: right;
     padding: 10px 0;
 }
