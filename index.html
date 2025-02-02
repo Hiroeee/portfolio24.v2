@@ -48,7 +48,7 @@
     <meta property="twitter:image" content="static/imgs/meta.jpg">   
     <script type="module" src="https://cdn.jsdelivr.net/npm/@splinetool/viewer@1.9.46/build/spline-viewer.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
+        function onPageResize() {
             const heroContainer = document.querySelector('.hero-container');
     
             function updateScale() {
@@ -62,6 +62,18 @@
             updateScale();
     
             window.addEventListener('resize', updateScale);
+        }
+
+        function onPageLoad() {
+            const heroContainer = document.querySelector('.hero-container');
+
+            setTimeout(() => {
+                heroContainer.classList.add('hero-container-ready');
+            }, 0);
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            onPageResize();
+            onPageLoad();
         });
     </script>
     <script>
@@ -188,7 +200,7 @@
             </div>
             <div class="l-video l-autoshow">
                 <video width="100%" autoplay muted loop>
-                    <source src="img/hero/hero-video.mp4" type="video/mp4">
+                    <source src="video/hero-video-enc-720p30-h264-avg800kbps.mp4" type="video/mp4">
                 </video>
             </div>
         </div>

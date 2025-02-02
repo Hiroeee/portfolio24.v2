@@ -754,7 +754,12 @@ footer a:hover {
     100% { transform: translateY(0);}
 }
 
+.hero-container-ready {
+    display: block !important;
+}
+
 .hero-container {
+    display: none;
     width: 700px;
     height: auto;
     overflow: hidden;
@@ -767,6 +772,7 @@ footer a:hover {
 
 .hero-container > spline-viewer {
     width: calc(100% + 180px);
+    pointer-events: none;
 }
 
 .loading {
