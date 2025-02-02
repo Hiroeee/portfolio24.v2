@@ -382,6 +382,17 @@ video {
     left: 0;
 }
 
+.l-video {
+    opacity: 1;
+}
+
+.mq-video {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .case-container {
     padding: 140px 0 140px 0;
 }
@@ -1398,6 +1409,18 @@ a.ref-text {
     }
 
     .alt-card img {
+        opacity: 1;
+    }
+
+    .hero-video {
+        padding-bottom: 214px;
+    }
+
+    .l-video {
+        opacity: 0;
+    }
+    
+    .mq-video {
         opacity: 1;
     }
 }
