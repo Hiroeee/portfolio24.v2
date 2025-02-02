@@ -1292,6 +1292,11 @@ a.ref-text {
         font-size: 35px;
     }
 
+    h2 {
+        font-size: 35px;
+        line-height: 36px;
+    }
+
     .large-desc {
         font-size: 16px;
     }
