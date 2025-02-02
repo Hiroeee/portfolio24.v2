@@ -1423,4 +1423,8 @@ a.ref-text {
     .mq-video {
         opacity: 1;
     }
+
+    .hero-video .l-autoshow {
+        animation: none;
+    }
 }
