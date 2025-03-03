@@ -178,12 +178,17 @@ p {
 }
 
 .main-wrapper {
+    max-width: 1340px;
+    margin: 0 auto;
+}
+
+.body-wrapper {
     margin: 40px 60px 0 60px;
 }
 
-.case-wrapper {
+/*.case-wrapper {
     margin: 0px 140px 0 140px;
-}
+}*/
 
 .navbar {
     width:auto;
@@ -1222,7 +1227,7 @@ a.ref-text {
         margin: 20px 20px 0 20px;
     }
 
-    .main-wrapper {
+    .body-wrapper {
         margin: 10px 20px 0 20px;
     }
 

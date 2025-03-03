@@ -7,7 +7,7 @@ Start a local development web server, by opening a new terminal window (e.g., te
 Change directory to the location of the project file (e.g., ~/Documents/Github/hiroeito.com):
 
 ```sh
-cd $HOME/Documents/Github/hiroeito.com
+cd $HOME/www/portfolio24.v2
 ```
 
 Execute the following command:
