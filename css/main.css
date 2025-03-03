@@ -477,8 +477,8 @@ footer {
     position: relative;
     color: var(--glow-color);
     cursor: pointer;
-    padding: 0.35em 1em;
-    border: 0.15em solid var(--glow-color);
+    /*padding: 0.35em 1em;*/
+    border: 0.13em solid var(--glow-color);
     background: none;
     
     -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
@@ -491,7 +491,7 @@ footer {
 
     display: flex;
     width: 100%;
-    height: 19rem;
+    height: 17.6rem;
     justify-content: center;
     align-items: center;
     border-radius: 4000px;
@@ -502,11 +502,12 @@ footer {
     color: var(--grn);
     text-align: center;
     font-family: var(--display);
-    font-size: 4rem;
+    font-size: 3.6rem;
     font-style: normal;
     font-weight: 500;
     line-height: 98%;
     text-transform: uppercase;
+    margin-top: 4px;
 }
 
 .glowing-txt {
@@ -1292,16 +1293,17 @@ a.ref-text {
     }
 
     .glow-desc {
-        font-size: 5.6rem;
+        font-size: 4.8rem;
+        margin-bottom: 6px;
     }
 
     .glowing-btn {
-        height: 26rem;
+        height: 24.8rem;
     }
 
     h4.pad-s-b {
-        font-size: 20px;
-        padding-bottom: 10px;
+        font-size: 16px;
+        padding-bottom: 6px;
     }
 
     .footer-container {
