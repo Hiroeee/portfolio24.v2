@@ -331,21 +331,19 @@ ul a:hover {
 }
 
 .hero-sec {
-    padding: 30px 0px 140px 0px;
+    padding: 20px 0px 140px 0px;
     display: flex;
     flex-direction: column;
 }
 
-.hero-text {
-    color: var(--grn);
-    text-align: center;
-    font-family: var(--display);
-    font-size: 8.14rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 84%; 
-    letter-spacing: -3.712px;
-    text-transform: uppercase;
+.name-container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.6rem;
+}
+
+.name-container img {
+    width: 100%;
 }
 
 .desc-four {
@@ -1130,6 +1128,12 @@ a.ref-text {
     padding-bottom: 0.18rem;
 }
 
+@media screen and (min-width: 1600px) {
+    html {
+        font-size: 32px;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .hero-text {
         font-size: 7.53rem;
@@ -1229,7 +1233,7 @@ a.ref-text {
     }
 
     .body-wrapper {
-        margin: 10px 20px 0 20px;
+        margin: 10px 40px 0 40px;
     }
 
     .hero-title {

@@ -53,9 +53,9 @@
     
             function updateScale() {
                 const ratio = (1.06 / 1648);
-                const ratioTranslateY = (16 / 1648);
                 const scale = ratio * window.innerWidth;
-                const transform = `translateX(-50%) scale(${scale})`;
+                const maxScale = Math.min(scale, 1);
+                const transform = `translateX(-50%) scale(${maxScale})`;
                 heroContainer.style.transform = transform;
             }
     
@@ -140,7 +140,9 @@
         </div>
         <div class="body-wrapper">
             <div class="hero-sec">
-                <div class="hero-text">Hiroe Ito</div>
+                <div class="name-container">
+                    <img src="img/hero/hero-name.svg" alt="Hiroe Ito">
+                </div>
                 <div class="hero-visual">
                     <div class="loading">
                         <div class="loader">
