@@ -46,8 +46,8 @@
     <meta property="twitter:description" content="A designer with a psychology and marketing background, specialising in UX/UI design for digital products.
     I translate complex problems into meaningful, productive and profitable designs!">
     <meta property="twitter:image" content="https://hiroeito.com/img/hero/meta-img.png">
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@splinetool/viewer@1.9.46/build/spline-viewer.min.js"></script>
-    <script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@splinetool/viewer@1.10.21/build/spline-viewer.min.js"></script>
+    <script defer>
         function onPageResize() {
             const heroContainer = document.querySelector('.hero-container');
     
@@ -71,7 +71,8 @@
                 heroContainer.classList.add('hero-container-ready');
             }, 0);
         }
-        document.addEventListener('DOMContentLoaded', () => {
+
+        document.addEventListener('readystatechange', () => {
             onPageResize();
             onPageLoad();
         });
@@ -115,7 +116,38 @@
        gtag('js', new Date());
        gtag('config', 'G-C523N4LTXL');
     </script>
-    <script src="scripts/scroll-timeline-polyfill.js"></script> 
+    <script src="scripts/scroll-timeline-polyfill.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('[debug] is ready');
+
+            customElements.whenDefined('spline-viewer').then(() => {
+                console.log('[debug] spline-viewer is ready');
+                
+                const el = document.getElementById('spline-avatar');
+                const elHeroAvatarLoading = document.getElementById('hero-avatar-loading')
+                
+                if (el && elHeroAvatarLoading) {
+                    el.addEventListener('load-complete', (event) => {
+                        console.log('[debug] Scene is ready and loaded:', event.detail?.url);
+                        el.classList.remove('invisible');
+                        
+                        setTimeout(() => {
+                            console.log('[debug] should remove visible class from spline avatar')
+                            elHeroAvatarLoading.classList.remove('visible');
+                        }, 800);
+                    });
+                    
+                    el.addEventListener('load-start', (event) => {
+                        console.log('[debug] Scene started loading:', event.detail?.url);
+                        // Scene started loading
+                    });
+                } else {
+                    console.error('[debug] Element with id "spline-avatar" not found');
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <div class="main-wrapper">
@@ -144,16 +176,21 @@
                     <img src="img/hero/hero-name.svg" alt="Hiroe Ito">
                 </div>
                 <div class="hero-visual">
-                    <div class="loading">
-                        <div class="loader">
-                            <span class="loader_element"></span>
-                            <span class="loader_element"></span>
-                            <span class="loader_element"></span>
-                        </div>
-                        <h5>loading</h5>
-                    </div>
                     <div class="hero-container">
+                        <div id="hero-avatar-loading" class="hero-avatar-container visible anim-vis">
+                            <div class="loading">
+                                <div class="loader">
+                                    <span class="loader_element"></span>
+                                    <span class="loader_element"></span>
+                                    <span class="loader_element"></span>
+                                </div>
+                                <div class="loading-text up">loading</div>
+                            </div>
+                            <img src="img/hero/hero-avatar-v2.png" alt="Avatar imagew">
+                        </div>
                         <spline-viewer
+                            id="spline-avatar"
+                            class="invisible anim-vis"
                             url="https://prod.spline.design/wlnGpckuD316rjUc/scene.splinecode"
                             zoom="false"
                             zoom-intensity="0"
