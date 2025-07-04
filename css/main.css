@@ -948,7 +948,7 @@ footer a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     justify-content: space-between;
-    gap: 20px;
+    gap: 120px;
 }
 
 .hover-cont {
@@ -1046,7 +1046,6 @@ blockquote {
     flex-direction: column;
     justify-content: space-between;
     gap: 60px;
-    padding-right: 100px;
 }
 
 
@@ -1218,6 +1217,14 @@ a.ref-text {
     .marquee {
         margin: 20px 0 40px 0;
     }
+
+    .ref-box {
+        gap: 40px;
+    }
+
+    .card-container {
+        gap: 40px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -1226,7 +1233,7 @@ a.ref-text {
     }
 
     .body-wrapper {
-        margin: 10px 16px 0 16px;
+        margin: 16px 16px 0 16px;
     }
 
     .hero-title {
@@ -1260,10 +1267,6 @@ a.ref-text {
         display: flex;
         flex-direction: column;
         gap: 40px;
-    }
-
-    .ref-box {
-        gap: 60px;
     }
 
     h1 {
