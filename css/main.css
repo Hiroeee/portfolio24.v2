@@ -1222,11 +1222,11 @@ a.ref-text {
 
 @media screen and (max-width: 600px) {
     .navbar {
-        margin: 20px 20px 0 20px;
+        margin: 16px 16px 0 16px;
     }
 
     .body-wrapper {
-        margin: 10px 40px 0 40px;
+        margin: 10px 16px 0 16px;
     }
 
     .hero-title {
