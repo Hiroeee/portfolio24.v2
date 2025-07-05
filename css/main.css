@@ -116,7 +116,7 @@ p {
 
 .large-text {
     font-family: var(--display);
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     font-style: normal;
     font-weight: 500;
     line-height: 98%; 
@@ -215,6 +215,7 @@ p {
     height: 24px;
     width: 24px;
     position: relative;
+    transform: rotate(180deg);
 }
 
 .circle-logo {
@@ -350,9 +351,8 @@ ul a:hover {
 .desc-four {
     display: grid;
     align-content: space-between;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 60px;
-    align-items: center;
+    grid-template-columns: 0.6fr 1fr 1fr 1fr;
+    gap: 40px;
 }
 
 .s-desc {
@@ -948,7 +948,7 @@ footer a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     justify-content: space-between;
-    gap: 120px;
+    gap: 20px;
 }
 
 .hover-cont {
@@ -1041,13 +1041,19 @@ blockquote {
     float: right;
 }
 
+.ref-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    justify-content: space-between;
+    gap: 120px;
+}
+
 .ref-box {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 60px;
 }
-
 
 a.ref-text {
     color: var(--wht);
@@ -1218,12 +1224,16 @@ a.ref-text {
         margin: 20px 0 40px 0;
     }
 
+    .ref-container {
+        gap: 40px;
+    }
+
     .ref-box {
         gap: 40px;
     }
 
     .card-container {
-        gap: 40px;
+        gap: 20px;
     }
 }
 
