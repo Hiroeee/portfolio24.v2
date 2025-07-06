@@ -402,6 +402,10 @@ video {
     color:var(--wht);
 }
 
+.cursor-link {
+    cursor: pointer;
+}
+
 .cursor-projects {
     cursor: url("../img/hero/view-cur.png"), pointer !important;
 }
