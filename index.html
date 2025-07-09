@@ -46,37 +46,6 @@
     <meta property="twitter:description" content="A designer with a psychology and marketing background, specialising in UX/UI design for digital products.
     I translate complex problems into meaningful, productive and profitable designs!">
     <meta property="twitter:image" content="https://hiroeito.com/img/hero/meta-img.png">
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@splinetool/viewer@1.10.21/build/spline-viewer.min.js"></script>
-    <script defer>
-        function onPageResize() {
-            const heroContainer = document.querySelector('.hero-container');
-    
-            function updateScale() {
-                const ratio = (1.06 / 1648);
-                const scale = ratio * window.innerWidth;
-                const maxScale = Math.min(scale, 1);
-                const transform = `translateX(-50%) scale(${maxScale})`;
-                heroContainer.style.transform = transform;
-            }
-    
-            updateScale();
-    
-            window.addEventListener('resize', updateScale);
-        }
-
-        function onPageLoad() {
-            const heroContainer = document.querySelector('.hero-container');
-
-            setTimeout(() => {
-                heroContainer.classList.add('hero-container-ready');
-            }, 0);
-        }
-
-        document.addEventListener('readystatechange', () => {
-            onPageResize();
-            onPageLoad();
-        });
-    </script>
     <script>
         function Marquee(selector, speed) {
             const parentSelector = document.querySelector(selector);
@@ -118,35 +87,84 @@
     </script>
     <script src="scripts/scroll-timeline-polyfill.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            console.log('[debug] is ready');
+    function isTouchDevice() {
+        return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    }
 
-            customElements.whenDefined('spline-viewer').then(() => {
-                console.log('[debug] spline-viewer is ready');
-                
-                const el = document.getElementById('spline-avatar');
-                const elHeroAvatarLoading = document.getElementById('hero-avatar-loading')
-                
-                if (el && elHeroAvatarLoading) {
-                    el.addEventListener('load-complete', (event) => {
-                        console.log('[debug] Scene is ready and loaded:', event.detail?.url);
-                        el.classList.remove('invisible');
-                        
-                        setTimeout(() => {
-                            console.log('[debug] should remove visible class from spline avatar')
-                            elHeroAvatarLoading.classList.remove('visible');
-                        }, 800);
-                    });
+    function onPageResize() {
+        const heroContainer = document.querySelector('.hero-container');
+
+        function updateScale() {
+            const baseRatio = window.innerWidth <= 600 ? 1.64 : 1.04;
+            const ratio = (baseRatio / 1648);
+            const scale = ratio * window.innerWidth;
+            const maxScale = Math.min(scale, 1);
+            const transform = `translateX(-50%) scale(${maxScale})`;
+            heroContainer.style.transform = transform;
+        }
+
+        updateScale();
+
+        window.addEventListener('resize', updateScale);
+    }
+
+    function onPageLoad() {
+        const heroContainer = document.querySelector('.hero-container');
+
+        setTimeout(() => {
+            heroContainer.classList.add('hero-container-ready');
+        }, 0);
+    }
+
+    document.addEventListener('readystatechange', () => {
+        onPageResize();
+        onPageLoad();
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        if (isTouchDevice()) {
+            document.querySelector('html').classList.add('is-touch');
+
+            return;
+        }
+
+        const container = document.getElementById('spline-container');
+
+        container.innerHTML = `
+            <spline-viewer
+                id="spline-avatar"
+                class="invisible anim-vis"
+                url="https://prod.spline.design/wlnGpckuD316rjUc/scene.splinecode"
+                zoom="false"
+                zoom-intensity="0"
+                events-target="global"
+            />
+            </spline-viewer>  
+        `;
+
+        const script = document.createElement('script');
+        script.type = 'module';
+        script.src = 'https://cdn.jsdelivr.net/npm/@splinetool/viewer@1.10.21/build/spline-viewer.min.js';
+        document.head.appendChild(script);
+
+        customElements.whenDefined('spline-viewer').then(() => {
+            const el = document.getElementById('spline-avatar');
+            const elHeroAvatarLoading = document.getElementById('hero-avatar-loading')
+            
+            if (el && elHeroAvatarLoading) {
+                el.addEventListener('load-complete', (event) => {
+                    el.classList.remove('invisible');
                     
-                    el.addEventListener('load-start', (event) => {
-                        console.log('[debug] Scene started loading:', event.detail?.url);
-                        // Scene started loading
-                    });
-                } else {
-                    console.error('[debug] Element with id "spline-avatar" not found');
-                }
-            });
+                    setTimeout(() => {
+                        elHeroAvatarLoading.classList.remove('visible');
+                    }, 800);
+                });
+               
+            } else {
+                console.error('Element with id "spline-avatar" not found');
+            }
         });
+    });
     </script>
 </head>
 <body>
@@ -188,16 +206,9 @@
                             </div>
                             <img src="img/hero/hero-avatar-v2.png" alt="Avatar imagew">
                         </div>
-                        <spline-viewer
-                            id="spline-avatar"
-                            class="invisible anim-vis"
-                            url="https://prod.spline.design/wlnGpckuD316rjUc/scene.splinecode"
-                            zoom="false"
-                            zoom-intensity="0"
-                            events-target="global"
-                        />
-                        </spline-viewer> 
-                    </div> 
+                        <div id="spline-container">
+                        </div>
+                    </div>
                 </div>
                 <div class="slider-container">
                     <div class="marquee" id="about">

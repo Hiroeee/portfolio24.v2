@@ -772,7 +772,11 @@ footer a:hover {
     pointer-events: none;
 }
 
-.hero-container > spline-viewer {
+#spline-container {
+    width: calc(100% + 240px) !important;
+}
+
+#spline-container > spline-viewer {
     width: calc(100% + 180px);
     pointer-events: none !important;
     position: relative;
@@ -1241,7 +1245,24 @@ a.ref-text {
     }
 }
 
+.is-touch .hero-visual .loading {
+    display: none;
+}
+
 @media screen and (max-width: 600px) {
+    .hero-visual {
+        width: 100%;
+        height: 26rem;
+    }
+
+    .hero-avatar-container {
+        top: 6px;
+    }
+
+    .hero-visual .loading {
+        display: none;
+    }
+    
     .navbar {
         margin: 16px 16px 0 16px;
     }
@@ -1401,3 +1422,4 @@ a.ref-text {
         display: none;
     }
 }
+
