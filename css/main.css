@@ -1406,10 +1406,6 @@ a.ref-text {
         width: 80px;
     }
 
-    .hero-visual, video, .case-img img, img.image, img.hover, .case-card, .card-img img {
-        border-radius: calc(var(--br) / 2 );
-    }
-
     .alt-card video {
         opacity: 0;
     }
