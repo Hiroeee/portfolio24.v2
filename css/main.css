@@ -721,7 +721,7 @@ footer a:hover {
 }
 
 .footnote {
-    color: rgba(255, 255, 255, 0.40);
+    color: rgba(255, 255, 255, 0.50);
     text-align: right;
     padding: 10px 0;
 }
@@ -907,6 +907,7 @@ footer a:hover {
 }
 
 .tag-box {
+    color:  rgba(255, 255, 255, 0.50);
     display: flex;
     gap: 4px;
     flex-direction: column;
