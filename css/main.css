@@ -348,6 +348,13 @@ ul a:hover {
     width: 100%;
 }
 
+.desc-three {
+    display: grid;
+    align-content: space-between;
+    grid-template-columns: 0.6fr 1fr 1fr;
+    gap: 40px;
+}
+
 .desc-four {
     display: grid;
     align-content: space-between;
@@ -583,6 +590,11 @@ footer {
 .glowing-btn:hover:after {
     opacity: 1;
     animation: none;
+}
+
+.link {
+    color: var(--grn);
+    text-decoration: none;
 }
   
 @keyframes faulty-flicker {
@@ -1036,6 +1048,10 @@ blockquote {
     border-radius: var(--br);
 }
 
+.device-img img {
+    width: 100%;
+}
+
 .img-box {
     display: flex;
     flex-direction: column;
@@ -1215,6 +1231,13 @@ a.ref-text {
         font-size: 20px;
     }
 
+    .desc-three {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
     .desc-four.up {
         display: flex;
         flex-direction: column;
@@ -1245,9 +1268,7 @@ a.ref-text {
     }
 }
 
-.is-touch .hero-visual .loading {
-    display: none;
-}
+
 
 @media screen and (max-width: 600px) {
     .hero-visual {
